@@ -8,12 +8,13 @@ body {
 header{
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
 nav.encabezado{
   overflow: hidden;
   background-color: #000000;
-  height: 60px;
+  height: 14%;
   z-index: 3;
   position: fixed;
   width: 100%;
@@ -51,6 +52,8 @@ nav.encabezado{
 /* body */
 
 section {
+  margin-top: 7%;
+  width: 100%;
 
 }
 
@@ -62,7 +65,9 @@ footer{
   width: 100%;
   height: 50px;
   position: absolute;
-  
+  left: 0;
+  background-color: white;
+
 }
 
 .final{
