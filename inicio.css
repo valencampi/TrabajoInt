@@ -91,3 +91,12 @@ footer{
   float: left;
   padding: 5px;
 }
+
+.titulos {
+  text-decoration: underline;
+}
+
+.subtitulos {
+  text-decoration: underline;
+  font-weight: bold;
+}
