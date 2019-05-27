@@ -26,7 +26,6 @@ nav.encabezado{
   width: 100%;
 }
 
-
 .logo {
   margin: 10px;
   height: 40px;
@@ -54,9 +53,18 @@ nav.encabezado{
 section {
   margin-top: 100px;
   width: 100%;
-
 }
 
+
+/* pelis */
+div{
+  overflow: hidden;
+}
+
+img {
+  height: 200px;
+  float: right;
+}
 
 
 /* footer */
@@ -66,7 +74,7 @@ footer{
   height: 50px;
   position: absolute;
   left: 0;
-  background-color: white;
+  background-color: #F3EDED;
 
 }
 

@@ -1,5 +1,6 @@
 window.onload = function () {
 
+// peliculas mas populares
 fetch("https://api.themoviedb.org/3/movie/popular?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US&page=1")
 .then(function(respond) {
   return respond.json()
@@ -28,6 +29,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=6e11caa7480bb2cb18a5bf
   console.log("Error" + error) ;
 })
 
+// peliculas con mayor puntaje
 fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US&page=1")
 .then(function(respond) {
   return respond.json()
@@ -50,11 +52,42 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=6e11caa7480bb2cb18a5
     puntaje.innerHTML += "<li>"+ title + "</li>"
     puntaje.innerHTML += "<p>"+ overview + "</p>"
     puntaje.innerHTML += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
-}})
-
+}
+})
 .catch(function(error) {
   console.log("Error" + error);
 })
+
+// proximos estrenos
+fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US&page=1s")
+.then(function(respond) {
+  return respond.json()
+})
+.then(function(data) {
+  console.log(data);
+  console.log("estrenos");
+
+  var arrayEstrenos = data.results
+  console.log(arrayEstrenos);
+
+  var estrenos = document.querySelector("ul.estrenos")
+
+  for (var i = 0; i < 5; i++){
+  var id = arrayEstrenos[i].id
+  var title = arrayEstrenos[i].title
+  var overview = arrayEstrenos[i].overview
+  var foto = arrayEstrenos[i].poster_path
+
+  estrenos.innerHTML += "<li>" + title + "</li>"
+  estrenos.innerHTML += "<p>" + overview + "</p>"
+  estrenos.innerHTML += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+}
+})
+.catch(function(error) {
+  return console.log("Error" + error);
+})
+
+
 
 
 }
