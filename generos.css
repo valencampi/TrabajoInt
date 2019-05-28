@@ -46,7 +46,6 @@ nav.encabezado{
 }
 
 .li1 {
-  float: right;
   list-style-type: none;
   text-align: center;
   padding: 15px;
@@ -59,7 +58,7 @@ nav.encabezado{
   text-align: center;
   padding: 15px;
   color: white;
-  
+
 }
 
 
