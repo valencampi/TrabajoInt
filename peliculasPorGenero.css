@@ -61,9 +61,18 @@ nav.encabezado{
   color: white;
 
 }
+li.buscador{
+  float: right;
+  list-style-type: none;
+  text-align: center;
+  padding: 15px;
+  color: white;
+
+}
 
 /* footer */
 
+/* footer */
 footer{
   overflow: hidden;
   width: 100%;
@@ -78,7 +87,6 @@ footer{
   background-color: white;
 
 }
-
 
 .li2 {
   float: right;
@@ -96,6 +104,11 @@ footer{
   padding: 5px;
 }
 
+//*footer*//
+
+/*body*/
+
+
 .titulos {
   text-decoration: underline;
 }
@@ -104,5 +117,3 @@ footer{
   text-decoration: underline;
   font-weight: bold;
 }
-
-//*footer*//

@@ -67,6 +67,15 @@ li.logIn {
 
 }
 
+li.buscador{
+  float: right;
+  list-style-type: none;
+  text-align: center;
+  padding: 15px;
+  color: white;
+
+}
+
 /* body */
 
 section {
