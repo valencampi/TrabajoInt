@@ -2,6 +2,29 @@ window.onload = function () {
 
 // header
 
+var inicio = querySelector(".logIn")
+
+function Inicio (){
+  var Inicio = {
+    nombre: "",
+    email: "",
+    genero: "",
+  }
+
+}
+
+
+
+Inicio.onclick = function ()
+
+Inicio.nombre = prompt ("Ingrese su Nombre")
+console.log(Inicio)
+Inicio.genero = prompt ("Ingrese su genero")
+console.log(Inicio)
+Inicio.email = prompt ("Ingrese su email")
+console.log(Inicio)
+
+
 // peliculas mas populares
 fetch("https://api.themoviedb.org/3/movie/popular?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US&page=1")
 .then(function(respond) {

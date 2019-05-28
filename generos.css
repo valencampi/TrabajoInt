@@ -2,7 +2,6 @@
 font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
-
 body {
   background-color: #E0E0E0;
 }
@@ -55,6 +54,7 @@ nav.encabezado{
   color: white;
   float: left;
 }
+
 .logIn {
   float: right;
   list-style-type: none;
@@ -62,6 +62,7 @@ nav.encabezado{
   padding: 15px;
   color: white;
 }
+
 li.buscador{
   float: right;
   list-style-type: none;
@@ -83,7 +84,6 @@ li.buscador{
 }
 
 
-
 /* footer */
 
 footer{
@@ -101,7 +101,6 @@ footer{
 
 }
 
-
 .li2 {
   float: right;
   list-style-type: none;
@@ -118,13 +117,4 @@ footer{
   padding: 5px;
 }
 
-.titulos {
-  text-decoration: underline;
-}
-
-.subtitulos {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-//*footer*//
+/*footer*/
