@@ -41,11 +41,19 @@ nav.encabezado{
 }
 
 .li1 {
+  list-style-type: none;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  float: left;
+}
+.logIn {
   float: right;
   list-style-type: none;
   text-align: center;
   padding: 15px;
   color: white;
+
 }
 
 /* body */
