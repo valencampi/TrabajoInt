@@ -1,6 +1,30 @@
 window.onload = function () {
 
 // header
+var inicio = document.querySelector ("button.button")
+inicio.onclick = function () {
+  var Login = {
+    nombre: (""),
+    genero: (""),
+    email: (""),
+  }
+  Login.nombre = prompt ("Ingrese su nombre")
+  Login.email = prompt ("Ingrese su email")
+  Login.genero = prompt ("Ingrese su genero")
+  console.log(Login);
+}
+
+// if (= true) {
+//   var desaparecer = document.querySelector("button.button")
+//   desaparecer.style.display="none"
+// }
+//   else {
+//   var quedar = document.querySelector("button.button")
+//   quedar.style.display = "block"
+// }
+
+// buscador
+
 
 
 // peliculas mas populares
@@ -19,11 +43,9 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=6e11caa7480bb2cb18a5bf
   for (var i = 0; i < 5; i++) {
     var id = arrayPopular[i].id
     var title = arrayPopular[i].title
-    var overview = arrayPopular[i].overview
     var foto = arrayPopular[i].poster_path
 
     populares.innerHTML += "<li>"+ title + "</li>"
-    populares.innerHTML += "<p>"+ overview + "</p>"
     populares.innerHTML += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
 }
 
@@ -49,11 +71,9 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=6e11caa7480bb2cb18a5
   for (var i = 0; i < 5; i++) {
     var id = arrayPuntaje[i].id
     var title = arrayPuntaje[i].title
-    var overview = arrayPuntaje[i].overview
     var foto = arrayPuntaje[i].poster_path
 
     puntaje.innerHTML += "<li>"+ title + "</li>"
-    puntaje.innerHTML += "<p>"+ overview + "</p>"
     puntaje.innerHTML += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
 }
 })
@@ -78,11 +98,9 @@ fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=6e11caa7480bb2cb18a5b
   for (var i = 0; i < 5; i++){
   var id = arrayEstrenos[i].id
   var title = arrayEstrenos[i].title
-  var overview = arrayEstrenos[i].overview
   var foto = arrayEstrenos[i].poster_path
 
   estrenos.innerHTML += "<li>" + title + "</li>"
-  estrenos.innerHTML += "<p>" + overview + "</p>"
   estrenos.innerHTML += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
 }
 })
