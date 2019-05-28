@@ -1,5 +1,7 @@
 window.onload = function () {
 
+// header
+
 // peliculas mas populares
 fetch("https://api.themoviedb.org/3/movie/popular?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US&page=1")
 .then(function(respond) {

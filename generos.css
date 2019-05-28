@@ -1,4 +1,7 @@
-*{box-sizing: border-box;}
+*{box-sizing: border-box;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
 
 body {
   background-color: #E0E0E0;
@@ -58,8 +61,19 @@ nav.encabezado{
   text-align: center;
   padding: 15px;
   color: white;
-
 }
+
+/* body */
+
+.titulos {
+  text-decoration: underline;
+}
+
+.subtitulos {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 
 
 /* footer */
