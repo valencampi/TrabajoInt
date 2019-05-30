@@ -73,6 +73,14 @@ li.buscador{
 
 }
 
+li.logIn {
+  float: right;
+  list-style-type: none;
+  text-align: center;
+  padding: 15px;
+  color: white;
+
+}
 /* body */
 
 .titulos {
