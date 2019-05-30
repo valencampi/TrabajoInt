@@ -90,28 +90,6 @@ li.buscador{
 }
 
 
-/* pelis */
-div{
-  overflow: hidden;
-}
-
-img {
-  height: 200px;
-}
-
-ul.populares{
-  list-style-type: none;
-}
-
-ul.puntaje{
-  list-style-type: none;
-}
-
-ul.estrenos{
-  list-style-type: none;
-}
-
-
 /* footer */
 footer{
   overflow: hidden;

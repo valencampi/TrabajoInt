@@ -35,18 +35,42 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=6e11caa7480bb2cb18a5bf
 .then(function(data) {
   console.log(data);
 
+  var cantidadDePelis = 6;
+
   var arrayPopular = data.results
   console.log(arrayPopular);
 
   var populares=document.querySelector("ul.populares")
 
-  for (var i = 0; i < 5; i++) {
+  var li = ""
+  var thumbnail =document.querySelector("div.row")
+  var div = ""
+
+  for (var i = 0; i < cantidadDePelis; i++) {
     var id = arrayPopular[i].id
     var title = arrayPopular[i].title
     var foto = arrayPopular[i].poster_path
 
-    populares.innerHTML += "<li>"+ title + "</li>"
-    populares.innerHTML += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+    if (i === 0) {
+      li = "<li class='mySlides' style='display:block;'>"
+    }else {
+      li = "<li class='mySlides'>"
+    }
+
+      li += "<div class='numbertext'>" +(i+1) + "/" +cantidadDePelis+ " <div/>"
+      li += "<p>"+ title + "</p>"
+      li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+    li += "</li>"
+
+    populares.innerHTML += li
+
+    div = "<div class='column'>"
+      div += "<img class='demo cursor' style='width:100%' onclick='currentSlide(1)' src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+    div += "</div>"
+
+    thumbnail.innerHTML += div
+
+
 }
 
 })
