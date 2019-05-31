@@ -69,8 +69,6 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=6e11caa7480bb2cb18a5bf
     div += "</div>"
 
     thumbnail.innerHTML += div
-
-
 }
 
 })
@@ -87,16 +85,39 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=6e11caa7480bb2cb18a5
   console.log(data);
   console.log("puntaje");
 
+  var cantidadDePelis = 6;
+
   var arrayPuntaje = data.results
   console.log(arrayPuntaje);
 
   var puntaje=document.querySelector("ul.puntaje")
+  var li = ""
+  var thumbnail =document.querySelector("div.row")
+  var div = ""
 
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < 6; i++) {
     var id = arrayPuntaje[i].id
     var title = arrayPuntaje[i].title
     var foto = arrayPuntaje[i].poster_path
 
+    if (i === 0) {
+      li = "<li class='mySlides1' style='display:block;'>"
+    }else {
+      li = "<li class='mySlides1'>"
+    }
+
+      li += "<div class='numbertext'>" +(i+1) + "/" +cantidadDePelis+ " <div/>"
+      li += "<p>"+ title + "</p>"
+      li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+    li += "</li>"
+
+    puntaje.innerHTML += li
+
+    div = "<div class='column'>"
+      div += "<img class='demo cursor' style='width:100%' onclick='currentSlide(1)' src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+    div += "</div>"
+
+    thumbnail.innerHTML += div
     puntaje.innerHTML += "<li>"+ title + "</li>"
     puntaje.innerHTML += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
 }
@@ -114,15 +135,39 @@ fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=6e11caa7480bb2cb18a5b
   console.log(data);
   console.log("estrenos");
 
+  var cantidadDePelis = 6;
+
   var arrayEstrenos = data.results
   console.log(arrayEstrenos);
 
   var estrenos = document.querySelector("ul.estrenos")
+  // var li = ""
+  // var thumbnail =document.querySelector("div.row")
+  // var div = ""
 
-  for (var i = 0; i < 5; i++){
+  for (var i = 0; i < 6; i++){
   var id = arrayEstrenos[i].id
   var title = arrayEstrenos[i].title
   var foto = arrayEstrenos[i].poster_path
+
+  // if (i === 0) {
+  //   li = "<li class='mySlides' style='display:block;'>"
+  // }else {
+  //   li = "<li class='mySlides'>"
+  // }
+  //
+  //   li += "<div class='numbertext'>" +(i+1) + "/" +cantidadDePelis+ " <div/>"
+  //   li += "<p>"+ title + "</p>"
+  //   li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+  // li += "</li>"
+  //
+  // estrenos.innerHTML += li
+  //
+  // div = "<div class='column'>"
+  //   div += "<img class='demo cursor' style='width:100%' onclick='currentSlide(1)' src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+  // div += "</div>"
+  //
+  // thumbnail.innerHTML += div
 
   estrenos.innerHTML += "<li>" + title + "</li>"
   estrenos.innerHTML += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
@@ -133,7 +178,7 @@ fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=6e11caa7480bb2cb18a5b
 })
 
 
-//*LogIn*//
+/*LogIn*/
 function myFunction() {
   document.getElementById("demo").innerHTML = "Hello World";
 }
@@ -162,12 +207,6 @@ function myFunction() {
  //
  //   estrenos.innerHTML += "<ul>" + title + "</ul>"
  //   estrenos.innerHTML += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
- //
- //
- //
- //
- //
- //
  //
  // }
  // )
