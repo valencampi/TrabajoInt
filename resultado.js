@@ -24,7 +24,7 @@ window.onload = function(){
           var poster = arrayDeResultados[i].poster_path
           console.log(poster);
 
-          if (titulo != undefined) {
+          if (titulo != undefined && poster != undefined ) {
 
             var tituloResultados = document.querySelector('.resulatadosDeBusqueda')
             var url = "https://image.tmdb.org/t/p/original/" + poster
