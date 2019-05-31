@@ -29,7 +29,7 @@ window.onload = function(){
             var tituloResultados = document.querySelector('.resulatadosDeBusqueda')
             var url = "https://image.tmdb.org/t/p/original/" + poster
 
-            tituloResultados.innerHTML += "<li><p>" + titulo + "</p><p><img src=" + url  + "></p></li>"
+            tituloResultados.innerHTML += "<li class='liPelis'><p>" + titulo + "</p><p><img class='imgPelis' src=" + url  + "></p></li>"
 
 
           }
