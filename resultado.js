@@ -24,11 +24,16 @@ window.onload = function(){
           var poster = arrayDeResultados[i].poster_path
           console.log(poster);
 
+          if (titulo != undefined) {
 
-          var tituloResultados = document.querySelector('.resulatadosDeBusqueda')
-          var url = "https://image.tmdb.org/t/p/original/" + poster
+            var tituloResultados = document.querySelector('.resulatadosDeBusqueda')
+            var url = "https://image.tmdb.org/t/p/original/" + poster
 
-          tituloResultados.innerHTML += "<li><p>" + titulo + "</p><p><img src=" + url  + "></p></li>"
+            tituloResultados.innerHTML += "<li><p>" + titulo + "</p><p><img src=" + url  + "></p></li>"
+
+
+          }
+
 
 
 
