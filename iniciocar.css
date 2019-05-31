@@ -13,14 +13,20 @@ div.container2 ul {
 
 li.mySlides div.numbertext div img {
   height: 300px;
+  float: left;
+  margin-left: 255%;
 }
 
 li.mySlides1 div.numbertext1 div img {
   height: 300px;
+  float: left;
+  margin-left: 255%;
 }
 
 li.mySlides2 div.numbertext2 div img {
   height: 300px;
+  float: left;
+  margin-left: 255%;
 }
 
 img {
