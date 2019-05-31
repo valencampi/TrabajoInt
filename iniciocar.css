@@ -36,14 +36,17 @@ img {
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
+  overflow: hidden;
 }
 
 .container1 {
   position: relative;
+  overflow: hidden;
 }
 
 .container2 {
   position: relative;
+  overflow: hidden;
 }
 
 /* Hide the images by default */
