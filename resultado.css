@@ -1,0 +1,112 @@
+*{box-sizing: border-box;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
+body {
+  background-color: #E0E0E0;
+}
+
+section {
+  margin-top: 100px;
+  width: 100%;
+}
+
+/* header */
+header{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+nav.encabezado{
+  overflow: hidden;
+  background-color: #000000;
+  height: 14%;
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+}
+
+.header{
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.logo {
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  float: left;
+  z-index: 3;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+.nav {
+  overflow: hidden;
+}
+
+.li1 {
+  list-style-type: none;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  float: left;
+  font-size: 15px;
+}
+
+li.logIn {
+  float: right;
+  list-style-type: none;
+  text-align: center;
+  padding: 15px;
+  color: white;
+
+}
+
+li.buscador{
+  float: right;
+  list-style-type: none;
+  text-align: center;
+  padding: 15px;
+  color: white;
+
+}
+
+
+/* footer */
+footer{
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  background-color: #F3EDED;
+
+}
+
+.final{
+  background-color: white;
+
+}
+
+.li2 {
+  float: right;
+  list-style-type: none;
+  text-align: center;
+  color: black;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  font-size: 10px;
+}
+
+.movie {
+  height: 40px;
+  float: left;
+}

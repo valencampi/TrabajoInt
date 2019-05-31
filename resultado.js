@@ -25,6 +25,15 @@ window.onload = function(){
           console.log(poster);
 
 
+          var tituloResultados = document.querySelector('.resulatadosDeBusqueda')
+          var url = "https://image.tmdb.org/t/p/original/" + poster
+
+          tituloResultados.innerHTML += "<li><p>" + titulo + "</p><p><img src=" + url  + "></p></li>"
+
+
+
+
+
       }
 
       // var arrayGeneros = data.genres
@@ -46,5 +55,4 @@ window.onload = function(){
 
 
 
-
-}
+    }
