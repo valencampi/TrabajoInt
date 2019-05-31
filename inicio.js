@@ -52,7 +52,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=6e11caa7480bb2cb18a5bf
     var foto = arrayPopular[i].poster_path
 
     if (i === 0) {
-      li = "<li class='mySlides' style='display:block;'>"
+      li = "<li class='mySlides' style='display:block;height:100%;'>"
     }else {
       li = "<li class='mySlides'>"
     }
@@ -92,7 +92,7 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=6e11caa7480bb2cb18a5
 
   var puntaje=document.querySelector("ul.puntaje")
   var li = ""
-  var thumbnail =document.querySelector("div.row")
+  var thumbnail =document.querySelector("div.row1")
   var div = ""
 
   for (var i = 0; i < 6; i++) {
@@ -101,25 +101,24 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=6e11caa7480bb2cb18a5
     var foto = arrayPuntaje[i].poster_path
 
     if (i === 0) {
-      li = "<li class='mySlides1' style='display:block;'>"
+      li = "<li class='mySlides1' style='display:block;height:100%;'>"
     }else {
       li = "<li class='mySlides1'>"
     }
-
-      li += "<div class='numbertext'>" +(i+1) + "/" +cantidadDePelis+ " <div/>"
+      li += "<div class='numbertext1'>" +(i+1) + "/" +cantidadDePelis+ " <div/>"
       li += "<p>"+ title + "</p>"
       li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
     li += "</li>"
 
     puntaje.innerHTML += li
 
-    div = "<div class='column'>"
+    div = "<div class='column1'>"
       div += "<img class='demo cursor' style='width:100%' onclick='currentSlide(1)' src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
     div += "</div>"
 
     thumbnail.innerHTML += div
-    puntaje.innerHTML += "<li>"+ title + "</li>"
-    puntaje.innerHTML += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+    // puntaje.innerHTML += "<li>"+ title + "</li>"
+    // puntaje.innerHTML += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
 }
 })
 .catch(function(error) {
@@ -141,36 +140,33 @@ fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=6e11caa7480bb2cb18a5b
   console.log(arrayEstrenos);
 
   var estrenos = document.querySelector("ul.estrenos")
-  // var li = ""
-  // var thumbnail =document.querySelector("div.row")
-  // var div = ""
+  var li = ""
+  var thumbnail =document.querySelector("div.row2")
+  var div = ""
 
   for (var i = 0; i < 6; i++){
   var id = arrayEstrenos[i].id
   var title = arrayEstrenos[i].title
   var foto = arrayEstrenos[i].poster_path
 
-  // if (i === 0) {
-  //   li = "<li class='mySlides' style='display:block;'>"
-  // }else {
-  //   li = "<li class='mySlides'>"
-  // }
-  //
-  //   li += "<div class='numbertext'>" +(i+1) + "/" +cantidadDePelis+ " <div/>"
-  //   li += "<p>"+ title + "</p>"
-  //   li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
-  // li += "</li>"
-  //
-  // estrenos.innerHTML += li
-  //
-  // div = "<div class='column'>"
-  //   div += "<img class='demo cursor' style='width:100%' onclick='currentSlide(1)' src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
-  // div += "</div>"
-  //
-  // thumbnail.innerHTML += div
+  if (i === 0) {
+    li = "<li class='mySlides2' style='display:block;height:100%;'>"
+  }else {
+    li = "<li class='mySlides2'>"
+  }
 
-  estrenos.innerHTML += "<li>" + title + "</li>"
-  estrenos.innerHTML += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+    li += "<div class='numbertext2'>" +(i+1) + "/" +cantidadDePelis+ " <div/>"
+    li += "<p>"+ title + "</p>"
+    li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+  li += "</li>"
+
+  estrenos.innerHTML += li
+
+  div = "<div class='column2'>"
+    div += "<img class='demo cursor' style='width:100%' onclick='currentSlide(1)' src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+  div += "</div>"
+
+  thumbnail.innerHTML += div
 }
 })
 .catch(function(error) {
