@@ -88,9 +88,21 @@ img.imgPelis {
 li.liPelis {
   float: left;
   overflow: hidden;
-  width: 25%;
-  padding: 5%;
+  width: 33%;
+  height: 20%;
+  padding: 3%;
   list-style-type: none;
+}
+
+p.puntuacion {
+  text-decoration: underline;
+  text-align: center;
+}
+
+p.titulos{
+  text-align: center;
+  font-weight: bold;
+  font-family: "Francois One"
 }
 
 

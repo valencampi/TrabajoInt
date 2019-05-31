@@ -16,48 +16,44 @@ window.onload = function(){
       console.log(data);
       console.log(data.results);
       var arrayDeResultados = data.results
-
+      console.log(arrayDeResultados);
+      console.log(arrayDeResultados.length);
+      var li = "";
       for (var i = 0; i < arrayDeResultados.length; i++) {
+          console.log(arrayDeResultados[i]);
+
           var titulo = arrayDeResultados[i].title
           console.log(titulo);
 
           var poster = arrayDeResultados[i].poster_path
           console.log(poster);
 
-          if (titulo != undefined && poster != undefined ) {
+          var fechaDeLanzamiento = arrayDeResultados[i].release_date
+          console.log(fechaDeLanzamiento);
 
-            var tituloResultados = document.querySelector('.resulatadosDeBusqueda')
+          var puntuacion = arrayDeResultados[i].vote_average
+          console.log(puntuacion);
+
+          if (titulo!=null && poster!=null ) {
+            var tituloResultados = document.querySelector('div.resulatadosDeBusqueda')
             var url = "https://image.tmdb.org/t/p/original/" + poster
 
-            tituloResultados.innerHTML += "<li class='liPelis'><p>" + titulo + "</p><p><img class='imgPelis' src=" + url  + "></p></li>"
+            li ="<li class='liPelis'>"
+              li += "<p class= 'titulos'>" + titulo + "</p>"
+              li += "<img class='imgPelis' src=" + url  + ">"
+              if (fechaDeLanzamiento!= null) {
+                li += "<p class= 'puntuacion'> Lanzada el: " + fechaDeLanzamiento + "</p>"
+              }
+              li += "<p class='puntuacion'> Su puntucion es: " + puntuacion  + "/10</p>"
+            li += "</li>"
 
-
+            tituloResultados.innerHTML += li
           }
-
-
-
-
-
-
       }
 
-      // var arrayGeneros = data.genres
-      // console.log(data.genres);
-
-      // var generos=document.querySelector("ul.generos")
-      //
-      // for (var i = 0; i < 5; i++) {
-      //   var name = arrayGeneros[i].name
-      //
-      //   generos.innerHTML += "<li>"+ name + "</li>"
-      //
-      //
-      // }
     })
     .catch(function(error) {
       console.log("Error" + error) ;
     })
 
-
-
-    }
+}
