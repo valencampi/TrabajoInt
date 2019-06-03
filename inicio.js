@@ -58,7 +58,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=6e11caa7480bb2cb18a5bf
     }
 
       li += "<div class='numbertext'>" +(i+1) + "/" +cantidadDePelis+ " <div/>"
-      li += "<p>"+ title + "</p>"
+      li += "<p class='opacidad'>"+ title + "</p>"
       li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
     li += "</li>"
 
@@ -106,7 +106,7 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=6e11caa7480bb2cb18a5
       li = "<li class='mySlides1'>"
     }
       li += "<div class='numbertext1'>" +(i+1) + "/" +cantidadDePelis+ " <div/>"
-      li += "<p>"+ title + "</p>"
+      li += "<p class='opacidad'>"+ title + "</p>"
       li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
     li += "</li>"
 
@@ -156,7 +156,7 @@ fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=6e11caa7480bb2cb18a5b
   }
 
     li += "<div class='numbertext2'>" +(i+1) + "/" +cantidadDePelis+ " <div/>"
-    li += "<p>"+ title + "</p>"
+    li += "<p class='opacidad'>"+ title + "</p>"
     li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
   li += "</li>"
 

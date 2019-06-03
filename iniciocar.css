@@ -11,26 +11,50 @@ div.container2 ul {
   height: 400px;
 }
 
+li.mySlides div.numbertext{
+  width: 100%
+}
+
+li.mySlides1 div.numbertext1{
+  width: 100%
+}
+
+li.mySlides2 div.numbertext2{
+  width: 100%
+}
+
 li.mySlides div.numbertext div img {
-  height: 300px;
-  float: left;
-  margin-left: 255%;
+  height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 li.mySlides1 div.numbertext1 div img {
-  height: 300px;
-  float: left;
-  margin-left: 255%;
+  height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 li.mySlides2 div.numbertext2 div img {
-  height: 300px;
-  float: left;
-  margin-left: 255%;
+  height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img {
   vertical-align: middle;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.opacidad {
+  background-color: darkgrey;
+  width: 100%;
+  color: black;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
