@@ -12,25 +12,31 @@ div.container2 ul {
 }
 
 li.mySlides div.numbertext div img {
-  height: 300px;
+  height: 350px;
   float: left;
-  margin-left: 255%;
 }
 
 li.mySlides1 div.numbertext1 div img {
-  height: 300px;
+  height: 350px;
   float: left;
-  margin-left: 255%;
 }
 
 li.mySlides2 div.numbertext2 div img {
-  height: 300px;
+  height: 350px;
   float: left;
-  margin-left: 255%;
 }
 
 img {
   vertical-align: middle;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.opacidad {
+  background-color: darkgrey;
+  width: 100%;
+  color: black;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
