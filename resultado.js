@@ -35,19 +35,20 @@ window.onload = function(){
           console.log(puntuacion);
 
           if (titulo!=null && poster!=null ) {
-            var tituloResultados = document.querySelector('div.resulatadosDeBusqueda')
+            var tituloResultados = document.querySelector('div.resultadosDeBusqueda')
             var url = "https://image.tmdb.org/t/p/original/" + poster
 
-            li ="<li class='liPelis'>"
-              li += "<p class= 'titulos'>" + titulo + "</p>"
-              li += "<img class='imgPelis' src=" + url  + ">"
+            li ="<li class='liPelis' >"
+              li += "<p class= 'titulos' class='info'>" + titulo + "</p>"
+              li += "<img class='imgPelis' class='info' src=" + url  + ">"
               if (fechaDeLanzamiento!= null) {
                 li += "<p class='puntuacion'> Lanzada el: " + fechaDeLanzamiento + "</p>"
               }
-              li += "<p class='puntuacion'> Su puntucion es: " + puntuacion  + "/10</p>"
+              li += "<p class='puntuacion'> Su puntuacion es: " + puntuacion  + "/10</p>"
             li += "</li>"
 
             tituloResultados.innerHTML += li
+
           }
       }
 
