@@ -42,7 +42,7 @@ window.onload = function(){
               li += "<p class= 'titulos'>" + titulo + "</p>"
               li += "<img class='imgPelis' src=" + url  + ">"
               if (fechaDeLanzamiento!= null) {
-                li += "<p class= 'puntuacion'> Lanzada el: " + fechaDeLanzamiento + "</p>"
+                li += "<p class='puntuacion'> Lanzada el: " + fechaDeLanzamiento + "</p>"
               }
               li += "<p class='puntuacion'> Su puntucion es: " + puntuacion  + "/10</p>"
             li += "</li>"
