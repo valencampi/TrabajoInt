@@ -47,7 +47,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=6e11caa7480bb2cb18a5bf
   var div = ""
 
   for (var i = 0; i < cantidadDePelis; i++) {
-    var id = arrayPopular[i].id
+    var id= arrayPopular[i].id
     var title = arrayPopular[i].title
     var foto = arrayPopular[i].poster_path
 
