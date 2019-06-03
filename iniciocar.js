@@ -1,3 +1,4 @@
+window.addEventListener("load",function(){
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -108,3 +109,4 @@ function showSlides2(n) {
   dots[slideIndex-1].className += "active2";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+})
