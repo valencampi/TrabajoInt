@@ -9,7 +9,7 @@ inicio.onclick = function () {
     email: (""),
   }
   Login.nombre = prompt ("Ingrese su nombre")
-  Login.email = prompt ("Ingrese su email" + <input type='email' name='correo' id='correo' pattern=''^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$' required/>)
+  Login.email = prompt ("Ingrese su email")
   Login.genero = prompt ("Ingrese su genero")
   console.log(Login);
 }
