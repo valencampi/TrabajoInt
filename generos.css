@@ -70,7 +70,6 @@ li.buscador{
   text-align: center;
   padding: 15px;
   color: white;
-
 }
 
 li.logIn {
@@ -79,8 +78,12 @@ li.logIn {
   text-align: center;
   padding: 15px;
   color: white;
-
 }
+
+form input{
+  margin-bottom: 15px
+}
+
 /* body */
 
 .titulos {

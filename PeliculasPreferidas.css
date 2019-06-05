@@ -68,6 +68,10 @@ li.logIn {
   color: white;
 }
 
+form input{
+  margin-bottom: 15px
+}
+
 li.buscador{
   float: right;
   list-style-type: none;

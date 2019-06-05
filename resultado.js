@@ -35,16 +35,18 @@ window.onload = function(){
           console.log(puntuacion);
 
           if (titulo!=null && poster!=null ) {
-            var tituloResultados = document.querySelector('div.resultadosDeBusqueda')
-            var url = "https://image.tmdb.org/t/p/original/" + poster
+            var tituloResultados = document.querySelector('ul.resultadosDeBusqueda')
+            var url = "https://image.tmdb.org/t/p/original" + poster
 
             li ="<li class='liPelis' >"
-              li += "<p class= 'titulos' class='info'>" + titulo + "</p>"
+            li +="<a href='peliculas.html'>"
+              li += "<p class= 'titulos info'>" + titulo + "</p>"
               li += "<img class='imgPelis' class='info' src=" + url  + ">"
               if (fechaDeLanzamiento!= null) {
                 li += "<p class='puntuacion'> Lanzada el: " + fechaDeLanzamiento + "</p>"
               }
               li += "<p class='puntuacion'> Su puntuacion es: " + puntuacion  + "/10</p>"
+            li +="</a>"
             li += "</li>"
 
             tituloResultados.innerHTML += li

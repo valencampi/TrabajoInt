@@ -68,6 +68,10 @@ li.logIn {
   color: white;
 }
 
+form input{
+  margin-bottom: 15px
+}
+
 li.buscador{
   float: right;
   list-style-type: none;
@@ -80,17 +84,23 @@ li.buscador{
 /*Resultados de busqueda*/
 
 img.imgPelis {
+  float: left;
   width: 100%;
-  height: 100%;
+  height: 400px;
+  padding: 5px;
+}
+
+section ul{
+  overflow: hidden;
+  margin: 0;
 }
 
 li.liPelis {
   float: left;
-  overflow: hidden;
-  width: 33%;
+  width: 20%;
   height: 20%;
-  padding: 3%;
-  list-style-type: none;
+  padding: 15px;
+  list-style: none;
 }
 
 p.puntuacion {
@@ -101,7 +111,8 @@ p.puntuacion {
 p.titulos{
   text-align: center;
   font-weight: bold;
-  font-family: "Francois One"
+  font-family: "Francois One";
+  height: 27px;
 }
 
 
@@ -112,7 +123,7 @@ footer{
   height: 50px;
   position: absolute;
   left: 0;
-  background-color: #F3EDED;
+  /* background-color: #F3EDED; */
 }
 
 .final{
