@@ -2,8 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="iniciocar.css">
     <title></title>
-    <link rel="stylesheet" href="peliculasPorGenero.css">
   </head>
   <body>
     <header>
@@ -12,7 +14,8 @@
       <ul class="nav">
         <a href="inicio.html">
           <li class="li1">Inicio</li>
-        <li class="logIn"><button class="button" onclick="myFunction()">Log in</button></li>
+          <li class="logIn"><button class="button uk-margin-small-right" type="button" uk-toggle="target: #modal-login">Log in</button>
+          </li>
         <a href="generos.html">
           <li class="li1">Generos</li>
         </a>
@@ -26,6 +29,26 @@
       </ul>
 </form>
     </header>
+
+    <div id="modal-login" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title uk-text-center">Log In</h2>
+        <form class="uk-flex uk-flex-column" action="" method="post">
+          <input type="text" name="nombre" value="" placeholder="Ingrese su nombre">
+          <input type="email" name="email" value="" placeholder="Ingrese su email">
+          <select class="" name="genero">
+            <option value="" selected disabled>Genero</option>
+            <option value="">Hombre</option>
+            <option value="">Mujer</option>
+            <option value="">Otro</option>
+          </select>
+            <p class="uk-text-right">
+              <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+              <button class="uk-button uk-button-secondary" type="submit">Enviar</button>
+            </p>
+        </form>
+    </div>
+  </div>
 
     <section>
       <p class="subtitulos">Peliculas mas populares</p>
@@ -45,7 +68,7 @@
   </nav>
       </footer>
     </section>
-
-
   </body>
+  <script type="text/javascript" src="js/uikit.min.js">
+  </script>
 </html>

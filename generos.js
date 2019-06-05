@@ -24,20 +24,3 @@ window.onload = function () {
   })
 
   }
-
-  /*header*/
-  var inicio = document.querySelector ("button.button")
-  inicio.onclick = function () {
-    var Login = {
-      nombre: (""),
-      genero: (""),
-      email: (""),
-    }
-    Login.nombre = prompt ("Ingrese su nombre")
-    Login.email = prompt ("Ingrese su email")
-    Login.genero = prompt ("Ingrese su genero")
-    console.log(Login);
-  }
-
-  /*header*/
-  
