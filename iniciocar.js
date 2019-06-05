@@ -26,11 +26,11 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace("active", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
   console.log(slides[slideIndex-1]);
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += "active";
+  dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
@@ -62,12 +62,12 @@ function showSlides1(n) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace("active", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
   console.log(slideIndex1);
   console.log(slides[slideIndex1-1]);
   slides[slideIndex1-1].style.display = "block";
-  dots[slideIndex1-1].className += "active";
+  dots[slideIndex1-1].className += " active";
   captionText.innerHTML = dots[slideIndex1-1].alt;
 }
 
@@ -101,11 +101,11 @@ function showSlides2(x) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace("active", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
   console.log(slideIndex3);
   console.log(slides[slideIndex3-1]);
   slides[slideIndex3-1].style.display = "block";
-  dots[slideIndex3-1].className += "active";
+  dots[slideIndex3-1].className += " active";
   captionText.innerHTML = dots[slideIndex3-1].alt;
 }
