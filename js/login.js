@@ -21,6 +21,7 @@ formulario.onsubmit = function (event) {
     event.preventDefault()
     alert("Falta su genero")
   }else {
+    
   }
 }
 

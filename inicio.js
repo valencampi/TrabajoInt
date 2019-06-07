@@ -37,7 +37,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=6e11caa7480bb2cb18a5bf
     populares.innerHTML += li
 
     div = "<div class='column'>"
-      div += "<img class='demo cursor' style='width:100%' onclick='currentSlide" + (i+1) + "src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+      div += "<img class='demo cursor' style='width:100%' onclick='currentSlide'" + (i+1) + "src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
     div += "</div>"
 
     thumbnail.innerHTML += div
