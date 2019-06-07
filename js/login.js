@@ -8,23 +8,19 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 formulario.onsubmit = function (event) {
   var select = formulario.querySelector("select")
   var option = select.options[select.selectedIndex]
-  event.preventDefault()
   if (nombre.value =="" && email.value.match(mailformat)== null) {
     event.preventDefault()
-    alert("Ingrese su nombre e email")
+    alert("Complete todos los campos")
   }else if (nombre.value == "") {
     event.preventDefault()
-    alert("Ingrese su nombre")
+    alert("Falta su nombre")
   }else if (email.value.match(mailformat) == null) {
     event.preventDefault()
-    alert("Ingrese su email")
+    alert("Falta su email")
   }else if (option.value == "") {
     event.preventDefault()
-    alert("Ingrese su genero")
+    alert("Falta su genero")
   }else {
-    event.preventDefault();
-    alert("Bienvenido");
-    console.log(option);
   }
 }
 
