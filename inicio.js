@@ -138,4 +138,6 @@ fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=6e11caa7480bb2cb18a5b
   return console.log("Error" + error);
 })
 
+/*BUSCADOR*/
+
 })

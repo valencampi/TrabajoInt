@@ -66,5 +66,5 @@ window.onload = function(){
     .catch(function(error) {
       console.log("Error" + error) ;
     })
-  
+
 }
