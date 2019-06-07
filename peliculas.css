@@ -92,6 +92,38 @@ li.buscador{
   font-family: "Arial Black", Gadget, sans-serif
 }
 
+ul.detalles{
+  width: 100%
+}
+
+ul.detalles li{
+  list-style-type: none;
+  color: black;
+  overflow: hidden;
+}
+
+ul.detalles li img{
+  height: 300px;
+  float: left;
+}
+
+ul.detalles li p{
+  margin-left: 230px;
+  margin-top: 20px;
+}
+
+
+h1.peli{
+  font-weight: bold;
+  font-size: 23px;
+  font-family: 'Julius Sans One', sans-serif;
+  text-align: center;
+}
+
+span.underline{
+  text-decoration: underline;
+}
+
 
 /* footer */
 footer{

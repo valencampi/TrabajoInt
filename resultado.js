@@ -26,19 +26,28 @@
       console.log(arrayDeResultados);
       console.log(arrayDeResultados.length);
       var li = "";
+      var id = "";
+      var poster = ""
+      var fechaDeLanzamiento = ""
+      var puntuacion = ""
+
+
+
       for (var i = 0; i < arrayDeResultados.length; i++) {
           console.log(arrayDeResultados[i]);
 
-          var titulo = arrayDeResultados[i].title
+          id = arrayDeResultados[i].id
+
+          titulo = arrayDeResultados[i].title
           console.log(titulo);
 
-          var poster = arrayDeResultados[i].poster_path
+          poster = arrayDeResultados[i].poster_path
           console.log(poster);
 
-          var fechaDeLanzamiento = arrayDeResultados[i].release_date
+          fechaDeLanzamiento = arrayDeResultados[i].release_date
           console.log(fechaDeLanzamiento);
 
-          var puntuacion = arrayDeResultados[i].vote_average
+          puntuacion = arrayDeResultados[i].vote_average
           console.log(puntuacion);
 
           if (titulo!=null && poster!=null ) {
@@ -46,17 +55,15 @@
             var url = "https://image.tmdb.org/t/p/original" + poster
 
             li ="<li class='liPelis' >"
-            li +="<a href='peliculas.html'>"
               li += "<p class= 'titulos info'>" + titulo + "</p>"
               li += "<img class='imgPelis' class='info' src=" + url  + ">"
               if (fechaDeLanzamiento!= null) {
                 li += "<p class='puntuacion'> Lanzada el: " + fechaDeLanzamiento + "</p>"
               }
               li += "<p class='puntuacion'> Su puntuacion es: " + puntuacion  + "/10</p>"
-            li +="</a>"
             li += "</li>"
 
-            tituloResultados.innerHTML += li
+            tituloResultados.innerHTML += "<a href='peliculas.html?id=" + id + "'>"+ li + "</a>"
 
           }
       }
