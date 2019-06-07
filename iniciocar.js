@@ -31,7 +31,7 @@ function showSlides(n) {
   console.log(slides[slideIndex-1]);
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  // captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
 
@@ -68,7 +68,7 @@ function showSlides1(n) {
   console.log(slides[slideIndex1-1]);
   slides[slideIndex1-1].style.display = "block";
   dots[slideIndex1-1].className += " active";
-  captionText.innerHTML = dots[slideIndex1-1].alt;
+  // captionText.innerHTML = dots[slideIndex1-1].alt;
 }
 
 // carrousel 3
@@ -107,5 +107,5 @@ function showSlides2(x) {
   console.log(slides[slideIndex3-1]);
   slides[slideIndex3-1].style.display = "block";
   dots[slideIndex3-1].className += " active";
-  captionText.innerHTML = dots[slideIndex3-1].alt;
+  // captionText.innerHTML = dots[slideIndex3-1].alt;
 }

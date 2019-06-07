@@ -37,7 +37,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=6e11caa7480bb2cb18a5bf
     populares.innerHTML += li
 
     div = "<div class='column'>"
-      div += "<img class='demo cursor' style='width:100%' onclick='currentSlide'" + (i+1) + "src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+      div += "<img class='demo cursor' style='width:100%' onclick='currentSlide(" + (i+1) + ")' src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
     div += "</div>"
 
     thumbnail.innerHTML += div
@@ -82,7 +82,7 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=6e11caa7480bb2cb18a5
     puntaje.innerHTML += li
 
     div = "<div class='column1'>"
-      div += "<img class='demo1 cursor' style='width:100%' onclick='currentSlide1(1)' src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+      div += "<img class='demo1 cursor' style='width:100%' onclick='currentSlide1(" + (i+1) + ")' src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
     div += "</div>"
 
     thumbnail.innerHTML += div
@@ -106,7 +106,7 @@ fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=6e11caa7480bb2cb18a5b
 
   var estrenos = document.querySelector("ul.estrenos")
   var li = ""
-  var thumbnail =document.querySelector("div.row2")
+  var thumbnail = document.querySelector("div.row2")
   var div = ""
 
   for (var i = 0; i < 6; i++){
@@ -128,7 +128,7 @@ fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=6e11caa7480bb2cb18a5b
   estrenos.innerHTML += li
 
   div = "<div class='column2'>"
-    div += "<img class="+'demo2 cursor'+" style="+'width:100%'+" onclick="+'currentSlide2(1)'+" src="+'https://image.tmdb.org/t/p/w500/'+ foto + ">"
+    div += "<img class="+'demo2 cursor'+" style="+'width:100%'+" onclick='currentSlide2(" + (i+1) + ")' src="+'https://image.tmdb.org/t/p/w500/'+ foto + ">"
   div += "</div>"
 
   thumbnail.innerHTML += div
