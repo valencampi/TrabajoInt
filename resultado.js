@@ -1,10 +1,18 @@
 window.onload = function(){
 
     var urlParams = new URLSearchParams(window.location.search);
-
     var query = urlParams.get('buscador');
 
-    console.log(query);
+
+    var buscador = document.querySelector(".buscador1");
+    buscador.onsubmit = function(e){
+      resultado = document.querySelector(".resultado").value;
+      if(resultado.length == 0 || resultado.length < 3){
+        console.log(resultado.length);
+        alert("+ter ingresa mas de 3 letras")
+        e.preventDefault();
+      }
+    }
 
     var url = "https://api.themoviedb.org/3/search/multi?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US&query="+query+"&page=1&include_adult=false"
 
@@ -58,12 +66,5 @@ window.onload = function(){
     .catch(function(error) {
       console.log("Error" + error) ;
     })
-     var buscador = document.querySelector("form.buscador")
-     var buscar = document.querySelector("input [name = 'buscador']")
-     buscador.onsubmit = function (event) {
-       if (buscador.value == "") {
-         event.preventDefault()
-         alert("Debe ingresar una pelicula")
-       }
-     }
+  
 }
