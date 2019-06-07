@@ -89,8 +89,9 @@ li.buscador{
 .subtitulos {
   color: black !important;
   text-decoration: underline;
-  font-weight: bold;
-  font-family: "Arial Black", Gadget, sans-serif
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
 }
 
 

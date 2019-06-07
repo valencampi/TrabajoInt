@@ -1,3 +1,30 @@
+section div{
+  padding: 25px;
+}
+
+ul.populares{
+  padding: 0;
+}
+
+ul.estrenos{
+  padding: 0;
+}
+
+ul.puntaje{
+  padding: 0;
+}
+
+div.numbertext{
+  padding: 0;
+}
+
+div.numbertext1{
+  padding: 0;
+}
+
+div.numbertext2{
+  padding: 0;
+}
 
 div.container ul {
   height: 400px;
@@ -47,14 +74,16 @@ li.mySlides2 div.numbertext2 div img {
 img {
   vertical-align: middle;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 0;
 }
 
 .opacidad {
-  background-color: darkgrey;
   width: 100%;
-  color: black;
+  font-size: 18px;
+  font-weight:200;
+  text-align: center;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -148,21 +177,18 @@ img {
 /* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: #222;
   padding: 2px 16px;
   color: white;
 }
 
 .caption-container1 {
   text-align: center;
-  background-color: #222;
   padding: 2px 16px;
   color: white;
 }
 
 .caption-container2 {
   text-align: center;
-  background-color: #222;
   padding: 2px 16px;
   color: white;
 }
