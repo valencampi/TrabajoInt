@@ -14,7 +14,7 @@ window.onload = function () {
     for (var i = 0; i < 5; i++) {
       var name = arrayGeneros[i].name
 
-      generos.innerHTML += "<li>"+ name + "</li>"
+      generos.innerHTML += "<li><p>"+ name + "</p></li>"
 
 
     }
