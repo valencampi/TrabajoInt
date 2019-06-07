@@ -58,5 +58,12 @@ window.onload = function(){
     .catch(function(error) {
       console.log("Error" + error) ;
     })
-
+     var buscador = document.querySelector("form.buscador")
+     var buscar = document.querySelector("input [name = 'buscador']")
+     buscador.onsubmit = function (event) {
+       if (buscador.value == "") {
+         event.preventDefault()
+         alert("Debe ingresar una pelicula")
+       }
+     }
 }
