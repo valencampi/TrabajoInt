@@ -42,7 +42,7 @@ fetch(url)
     var sinopsis = detalle.overview
     var estreno = detalle.release_date
     var foto = detalle.poster_path
-
+    var puntuacion = detalle.vote_average
   li = "<li>"
     li += "<h1 class='peli'>"+ titulo + "</h1>"
     li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
@@ -55,6 +55,7 @@ fetch(url)
       + "</p>"
     li += "<p> <span class='underline'>Idioma original:</span> "+ idioma + "</p>"
     li += "<p> <span class='underline'>Fecha de estreno:</span> "+ estreno + "</p>"
+    li += "<p> <span class='underline'>Su puntuacion es de :</span> "+ puntuacion + "</p>"
     li += "<h2> <span class='underline trailer'>Trailer:</span><br>"+ urlTrailer + "</br> </h2>"
   li += "</li>"
 
