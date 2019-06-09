@@ -1,9 +1,11 @@
 *{box-sizing: border-box;
 font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+
 }
 
 body {
-  background-color: #E0E0E0;
+  background-color: black;
+
 }
 
 section {
@@ -84,10 +86,11 @@ li.buscador{
 /* body */
 .titulos {
   text-decoration: underline;
+
 }
 
 .subtitulos {
-  color: black !important;
+  color: white !important;
   text-decoration: underline;
   font-family: 'Julius Sans One', sans-serif;
   font-weight: bolder;
