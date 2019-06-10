@@ -58,6 +58,8 @@ nav.encabezado{
   color: white;
   float: left;
   font-size: 15px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: 300;
 }
 
 li.logIn {
@@ -104,15 +106,21 @@ li.liPelis {
 }
 
 p.puntuacion {
-  text-decoration: underline;
   text-align: center;
+  color: white;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 p.titulos{
   text-align: center;
-  font-weight: bold;
-  font-family: "Francois One";
+  font-family: 'Julius Sans One', sans-serif;
   height: 27px;
+  color: white;
+}
+
+span{
+  text-decoration: underline;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 

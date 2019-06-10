@@ -54,6 +54,8 @@ nav.encabezado{
   color: white;
   float: left;
   font-size: 15px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: 300;
 }
 
 .logIn {

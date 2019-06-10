@@ -58,9 +58,9 @@
               li += "<p class= 'titulos info'>" + titulo + "</p>"
               li += "<img class='imgPelis' class='info' src=" + url  + ">"
               if (fechaDeLanzamiento!= null) {
-                li += "<p class='puntuacion'> Lanzada el: " + fechaDeLanzamiento + "</p>"
+                li += "<p class='puntuacion'> <span> Lanzada el:</span> " + fechaDeLanzamiento + "</p>"
               }
-              li += "<p class='puntuacion'> Su puntuacion es: " + puntuacion  + "/10</p>"
+              li += "<p class='puntuacion'> <span> Puntuacion:</span> " + puntuacion  + "/10</p>"
             li += "</li>"
 
             tituloResultados.innerHTML += "<a href='peliculas.html?id=" + id + "'>"+ li + "</a>"
