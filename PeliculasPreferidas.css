@@ -3,7 +3,7 @@ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
 body {
-  background-color: #E0E0E0;
+  background-color: black;
 }
 
 section {
@@ -24,7 +24,7 @@ nav {
 
 nav.encabezado{
   overflow: hidden;
-  background-color: #000000;
+  background-color: #262626;
   height: 14%;
   z-index: 3;
   position: fixed;

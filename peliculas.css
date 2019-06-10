@@ -1,9 +1,9 @@
 *{box-sizing: border-box;
-font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 body {
-  background-color: #E0E0E0;
+  background-color: black;
 
 }
 
@@ -25,7 +25,7 @@ nav {
 
 nav.encabezado{
   overflow: hidden;
-  background-color: #000000;
+  background-color: #262626;
   height: 14%;
   z-index: 3;
   position: fixed;
@@ -89,7 +89,28 @@ li.buscador{
 .subtitulos {
   text-decoration: underline;
   font-weight: bold;
-  font-family: "Arial Black", Gadget, sans-serif
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+p{
+  font-family: 'Julius Sans One', sans-serif;
+  color: white;
+}
+
+h1.peli{
+  font-weight: bold;
+  font-size: 23px;
+  font-family: 'Julius Sans One', sans-serif;
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+}
+
+h2{
+  font-family: 'Julius Sans One', sans-serif;
+  text-decoration: underline;
+  color: white;
+  font-size: 16px;
 }
 
 ul.detalles{
@@ -110,14 +131,6 @@ ul.detalles li img{
 ul.detalles li p{
   margin-left: 230px;
   margin-top: 20px;
-}
-
-
-h1.peli{
-  font-weight: bold;
-  font-size: 23px;
-  font-family: 'Julius Sans One', sans-serif;
-  text-align: center;
 }
 
 span.underline{

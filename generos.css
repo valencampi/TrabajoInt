@@ -3,7 +3,7 @@ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
 body {
-  background-color: #E0E0E0;
+  background-color: black;
 }
 
 section {
@@ -20,7 +20,7 @@ header{
 
 nav.encabezado{
   overflow: hidden;
-  background-color: #000000;
+  background-color: #262626;
   height: 14%;
   z-index: 3;
   position: fixed;
@@ -93,7 +93,8 @@ form input{
 .subtitulos {
   text-decoration: underline;
   font-weight: bold;
-  font-family: "Arial Black", Gadget, sans-serif
+  font-family: 'Julius Sans One', sans-serif;
+  color: white;
 }
 
 
