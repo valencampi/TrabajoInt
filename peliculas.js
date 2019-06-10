@@ -43,6 +43,7 @@ fetch(url)
     var estreno = detalle.release_date
     var foto = detalle.poster_path
     var puntuacion = detalle.vote_average
+
   li = "<li>"
     li += "<h1 class='peli'>"+ titulo + "</h1>"
     li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
@@ -56,14 +57,13 @@ fetch(url)
     li += "<p> <span class='underline'>Idioma original:</span> "+ idioma + "</p>"
     li += "<p> <span class='underline'>Fecha de estreno:</span> "+ estreno + "</p>"
     li += "<p> <span class='underline'>Su puntuacion es de :</span> "+ puntuacion + "</p>"
-    li += "<h2> <span class='underline trailer'>Trailer:</span><br>"+ urlTrailer + "</br> </h2>"
+    li +="<h2> <span class='underline trailer'>Trailer:</span><br>"+ urlTrailer + "</br> </h2>"
   li += "</li>"
 
-  // if (urlTrailer === (false)) {
-  //   h2 = display: "none"
-  // }
-  // else {
-  //   h2 = display: "block"
+  // if (urlTrailer === true) {
+  //   h2.style.display = "none"
+  // } else {
+  //   h2.style.display = "block"
   // }
 
   ul.innerHTML += li
@@ -72,5 +72,6 @@ fetch(url)
   .catch(function(error) {
     return console.log("Error" + error);
   })
+
 
 })

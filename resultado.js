@@ -1,3 +1,4 @@
+window.onload = function () {
 
     var urlParams = new URLSearchParams(window.location.search);
     var query = urlParams.get('buscador');
@@ -72,3 +73,5 @@
     .catch(function(error) {
       console.log("Error" + error) ;
     })
+
+  }
