@@ -3,7 +3,6 @@ window.addEventListener("load",function(){
 // trailer pelicula
 var urlParams = new URLSearchParams(window.location.search);
 var query = urlParams.get("id");
-
 var url = "https://api.themoviedb.org/3/movie/"+ query + "/videos?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US"
 var urlTrailer = ""
 
@@ -13,13 +12,16 @@ fetch(url)
   })
 
   .then(function(data) {
-    var trailer = data.results[0].key
-
-    urlTrailer = '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + trailer + '"frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    console.log(data);
+    console.log(data.status_code);
+      var trailer = data.results[0].key
+      urlTrailer = '<iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/' + trailer + '"frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
   })
   .catch(function(error) {
+    console.log(error);
     return console.log("Error" + error);
   })
+
 
 // detalle pelicula
 var url = "https://api.themoviedb.org/3/movie/" + query + "?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US"
@@ -57,16 +59,20 @@ fetch(url)
     li += "<p> <span class='underline'>Idioma original:</span> "+ idioma + "</p>"
     li += "<p> <span class='underline'>Fecha de estreno:</span> "+ estreno + "</p>"
     li += "<p> <span class='underline'>Su puntuacion es de :</span> "+ puntuacion + "</p>"
-    li +="<h2> <span class='underline trailer'>Trailer:</span><br>"+ urlTrailer + "</br> </h2>"
+    li +="<h2 class='trailer'> <span class='underline trailer'>Trailer:</span><br>"+ urlTrailer + "</br> </h2>"
   li += "</li>"
 
-  // if (urlTrailer === true) {
-  //   h2.style.display = "none"
-  // } else {
-  //   h2.style.display = "block"
-  // }
-
   ul.innerHTML += li
+
+// que desaparezca la palabra trailer si no hay trailer
+var iframe = document.querySelector("iframe.iframe")
+  console.log(iframe);
+  console.log(typeof iframe);
+
+  if (iframe === null) {
+    document.querySelector("h2.trailer").innerText = ""
+  }
+//
 
   })
   .catch(function(error) {
