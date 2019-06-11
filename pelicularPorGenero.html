@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/uikit.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Roboto+Mono:500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="inicio.css">
     <link rel="stylesheet" href="iniciocar.css">
-    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Roboto+Mono:500&display=swap" rel="stylesheet">
-    <title></title>
+    <title>Generos</title>
   </head>
   <body>
     <header>
@@ -15,20 +15,23 @@
       <ul class="nav">
         <a href="inicio.html">
           <li class="li1">Inicio</li>
-          <li class="logIn"><button class="button uk-margin-small-right" type="button" uk-toggle="target: #modal-login">Log in</button>
-          </li>
+        </a>
+        <li class="logIn"><button class="button uk-margin-small-right" type="button" uk-toggle="target: #modal-login">Log in</button>
+        </li>
         <a href="generos.html">
           <li class="li1">Generos</li>
         </a>
-        <li class="li1">Mis peliculas preferidas</li>
+        <a href="PeliculasPreferidas.html">
+          <li class="li1" >Mis peliculas preferidas</li>
+        </a>
         <li class="buscador">
           <form class="buscador1" action="resultado.html" method="get">
             <input type="search" name="buscador" class="resultado" placeholder="Buscador">
             <button type="submit" >Buscar</button>
           </form>
-          </li>
+        </li>
       </ul>
-</form>
+      </nav class="header">
     </header>
 
     <div id="modal-login" uk-modal>
@@ -39,25 +42,19 @@
           <input type="email" name="email" value="" placeholder="Ingrese su email">
           <select class="" name="genero">
             <option value="" selected disabled>Genero</option>
-            <option value="">Hombre</option>
-            <option value="">Mujer</option>
-            <option value="">Otro</option>
+            <option value="h">Hombre</option>
+            <option value="m">Mujer</option>
+            <option value="o">Otro</option>
           </select>
             <p class="uk-text-right">
-              <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+              <button class="uk-button uk-button-default uk-modal-close" type="reset">Cancelar</button>
               <button class="uk-button uk-button-secondary" type="submit">Enviar</button>
             </p>
         </form>
     </div>
-  </div>
+</div>
 
-    <section>
-      <p class="subtitulos">Peliculas mas populares</p>
-      <a href=" ">
-      <ul class="genero">
 
-      </ul>
-      </a>
 <footer>
   <nav class="final">
     <img class="movie" src="logomovies.png" alt="">
@@ -68,12 +65,14 @@
     </ul>
   </nav>
       </footer>
-    </section>
   </body>
-  <script type="text/javascript" src="js/uikit.min.js">
-  </script>
-  <script type="text/javascript" src="resultado.js">
-  </script>
-  <script type="text/javascript" src="peliculasPorGenero.js">
-  </script>
+
+    <script type="text/javascript" src="js/uikit.min.js">
+    </script>
+    <script type="text/javascript" src="resultado.js">
+    </script>
+    <script type="text/javascript" src="peliculasPorGenero.js">
+    </script>
+    <script type="text/javascript" src="js/login.js">
+    </script>
 </html>
