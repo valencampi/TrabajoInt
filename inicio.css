@@ -150,15 +150,63 @@ footer{
     height: 40px !important;
     min-height: 40px;
 }
-.logoMq{
-  width:70px;
-  border: 2px solid white;
-  border-radius: 35px;
+.logoMq {
+    margin: 10px;
+    height: 70px;
+    width: 70px;
+    float: left;
+    z-index: 3;
+    border: 2px solid white;
+    border-radius: 35px;
+
+
   }
 
 @media screen and (max-width:768px){
+  
+  .logoMq {
+      margin: 10px;
+      height: 70px;
+      width: 70px;
+      float: left;
+      z-index: 3;
+      border: 2px solid white;
+      border-radius: 35px;
 
 
+    }
+
+  button {
+    color: white;
+  }
+
+  li.logIn {
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .li1 {
+    list-style-type: none;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    float: left;
+    font-size: 15px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 300;
+    width: 100%;
+  }
+
+    li.buscador{
+      float: left;
+      width: 100%;
+    }
+
+    li.l1 {
+      float: left;
+    }
     nav.encabezado{
     display: none;
     }
@@ -170,6 +218,8 @@ footer{
 
     .uk-navbar-left{
         width: 100%;
+        background-color: #262626;
+
     }
     .uk-navbar-item{ display: inline; }
 
