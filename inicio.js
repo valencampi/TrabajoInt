@@ -161,6 +161,6 @@ function WidthChange(mq){
         $("#navbar_toggle").addClass('dis-none');
         $("#navbar_collapse").removeClass('dis-none');
     }
-}
+} 
 
 })

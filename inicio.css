@@ -160,10 +160,13 @@ footer{
     border-radius: 35px;
 
 
+
+  }
+  .logo{
+    display: none;
   }
 
 @media screen and (max-width:768px){
-  
   .logoMq {
       margin: 10px;
       height: 70px;
@@ -174,6 +177,13 @@ footer{
       border-radius: 35px;
 
 
+    }
+    .botonBuscar{
+      display: none;
+    }
+
+    .resultado{
+      text-align: center;
     }
 
   button {
