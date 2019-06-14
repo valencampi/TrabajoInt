@@ -122,6 +122,11 @@ p{
   color: white;
 }
 
+li{
+  list-style-type: none;
+  text-align: center;
+}
+
 
 /* header */
 header{
