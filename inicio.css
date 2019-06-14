@@ -138,6 +138,10 @@ footer{
 
 ////////////////////////
 
+nav.mqMobile{
+  display: none;
+}
+
 .dis-none{
     display: none;
 }
@@ -151,13 +155,15 @@ footer{
     min-height: 40px;
 }
 .logoMq {
-    margin: 10px;
+
     height: 70px;
     width: 70px;
     float: left;
     z-index: 3;
     border: 2px solid white;
     border-radius: 35px;
+    position: fixed;
+
 
 
 
@@ -166,7 +172,7 @@ footer{
     display: none;
   }
 
-@media screen and (max-width:768px){
+@media screen (max-width:768px){
   .logoMq {
       margin: 10px;
       height: 70px;

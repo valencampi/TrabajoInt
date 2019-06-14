@@ -40,6 +40,7 @@ div.container2 ul {
 
 li.mySlides div.numbertext{
   width: 100%
+  
 }
 
 li.mySlides1 div.numbertext1{
@@ -85,7 +86,7 @@ img {
   font-weight:200;
   text-align: center;
   color: white;
-  
+
 }
 
 /* Position the image container (needed to position the left and right arrows) */
