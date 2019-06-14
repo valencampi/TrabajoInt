@@ -1,6 +1,6 @@
 section div{
   padding: 25px;
-  margin-left: -10px;
+
 }
 
 ul.populares{
@@ -160,6 +160,7 @@ img {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  margin-left: -24px;
 }
 
 .numbertext1 {
@@ -168,6 +169,7 @@ img {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  margin-left: -24px;
 }
 
 .numbertext2 {
@@ -176,6 +178,7 @@ img {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  margin-left: -24px;
 }
 
 /* Container for image text */

@@ -1,5 +1,12 @@
 window.addEventListener("load",function () {
 
+if (sessionStorage.getItem("usuario") != null) {
+  document.querySelector(".logIn").style.display = "none"
+  document.querySelector(".preferidas").style.display = "block"
+  var usuario = document.querySelector(".nombre")
+  usuario.innerHTML = sessionStorage.getItem("usuario")
+}
+
 var formulario = document.querySelector("form.uk-flex.uk-flex-column")
 var nombre = formulario.querySelector("input[name = 'nombre']")
 var email = formulario.querySelector("input[name = 'email']")
@@ -21,18 +28,16 @@ formulario.onsubmit = function (event) {
     event.preventDefault()
     alert("Falta su genero")
   }else {
-
+    event.preventDefault()
+    sessionStorage.setItem("usuario", nombre.value)
+    document.querySelector(".logIn").style.display = "none"
+    document.querySelector(".preferidas").style.display = "block"
+    document.querySelector(".uk-modal-close").click()
   }
 }
 
 console.log(formulario);
 
-var Formulario = {
-  nombre: nombre.value,
-  email: email.value,
-  genero: option.value,
-}
 
-window.localStorage.setItem("", JSON.stringiyft(Formulario))
 
 })

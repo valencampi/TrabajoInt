@@ -3,6 +3,10 @@ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 
 }
 
+.preferidas {
+  display: none;
+}
+
 body {
   background-color: black;
 
