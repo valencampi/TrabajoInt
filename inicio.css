@@ -11,7 +11,8 @@ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
   list-style-type: none;
     text-align: center;
     padding: 15px;
-    color: white;
+    color: red;
+    font-style: italic;
     float: left;
     font-size: 15px;
     font-family: 'Julius Sans One', sans-serif;
@@ -117,6 +118,7 @@ li.buscador{
   font-family: 'Julius Sans One', sans-serif;
   font-weight: bolder;
   font-size: 18px;
+  margin-top: -100px;
 }
 
 
