@@ -172,12 +172,10 @@ footer{
   position: absolute;
   left: 0;
   background-color: #F3EDED;
-
 }
 
 .final{
   background-color: white;
-
 }
 
 .li2 {
@@ -198,5 +196,123 @@ footer{
   position: absolute;
   top: 9px;
   left: 5px;
-
 }
+
+////////////////////////
+
+nav.mqMobile{
+  display: none;
+}
+
+.dis-none{
+    display: none;
+}
+#navbar_toggle{
+    position: absolute;
+    right: 1em;
+    top: 2em;
+}
+.h-40{
+    height: 40px !important;
+    min-height: 40px;
+}
+.logoMq {
+    height: 70px;
+    width: 70px;
+    float: left;
+    z-index: 3;
+    border: 2px solid white;
+    border-radius: 35px;
+    position: fixed;
+    display: none;
+
+
+
+
+  }
+  .logo{
+    display: ;
+  }
+
+@media screen and (max-width:768px){
+  .logoMq {
+      margin: 10px;
+      height: 70px;
+      width: 70px;
+      float: left;
+
+      border: 2px solid white;
+      border-radius: 35px;
+      display: block;
+      position: static;
+
+
+    }
+    .botonBuscar{
+      display: none;
+    }
+
+    .resultado{
+      text-align: center;
+    }
+
+  button {
+    color: white;
+  }
+
+  li.logIn {
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .li1 {
+    list-style-type: none;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    float: left;
+    font-size: 15px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 300;
+    width: 100%;
+  }
+
+    li.buscador{
+      float: left;
+      width: 100%;
+    }
+
+    li.l1 {
+      float: left;
+    }
+    nav.encabezado{
+    display: none;
+    }
+
+    nav.uk-navbar-container{
+      display: block;
+    }
+
+
+    .uk-navbar-left{
+        width: 100%;
+        background-color: #262626;
+
+    }
+    .uk-navbar-item{ display: inline; }
+
+    .uk-navbar-nav{ display:block; }
+    .navbar-collapse{ width:100%; }
+    .uk-navbar-nav li{
+        display: block;
+        padding: 10px;
+        height: 40px;
+        border-bottom: 1px solid #ddd;
+    }
+    .uk-navbar-nav li a{
+        display: block;
+        width: 80%;
+        padding: 0.5rem 1rem;
+    }
