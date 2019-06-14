@@ -58,7 +58,7 @@ fetch(url)
       + "</p>"
     li += "<p> <span class='underline'>Idioma original:</span> "+ idioma + "</p>"
     li += "<p> <span class='underline'>Fecha de estreno:</span> "+ estreno + "</p>"
-    li += "<p> <span class='underline'>Su puntuación es de :</span> "+ puntuacion + "</p>"
+    li += "<p> <span class='underline'>Puntuación:</span> "+ puntuacion + "</p>"
     li +="<h2 class='trailer'> <span class='underline trailer'>Tráiler:</span><br>"+ urlTrailer + "</br> </h2>"
   li += "</li>"
 
