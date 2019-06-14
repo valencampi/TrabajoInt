@@ -4,7 +4,7 @@ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 
 body {
   background-color: black;
-  height: 100vh;
+  height: 100%;
 }
 
 section {
@@ -100,23 +100,25 @@ form input{
   color: white;
 }
 
+p{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
 
 /* footer */
-
 footer{
   overflow: hidden;
   width: 100%;
   height: 50px;
   position: absolute;
   left: 0;
-  bottom: 0;
   background-color: #F3EDED;
-
 }
 
 .final{
   background-color: white;
-
 }
 
 .li2 {

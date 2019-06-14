@@ -172,7 +172,7 @@ nav.mqMobile{
     display: none;
   }
 
-@media screen (max-width:768px){
+@media screen and (max-width:768px){
   .logoMq {
       margin: 10px;
       height: 70px;

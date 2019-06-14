@@ -9,12 +9,13 @@ window.onload = function () {
     var arrayGeneros = data.genres
     console.log(data.genres);
 
-    var generos=document.querySelector("ul.generos")
+    var generos = document.querySelector("ul.generos")
 
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < arrayGeneros.length; i++) {
       var name = arrayGeneros[i].name
+      var id = arrayGeneros[i].id
 
-      generos.innerHTML += "<li><p>"+ name + "</p></li>"
+      generos.innerHTML += "<li> <a href='pelicularPorGenero.html?idgenero=" + id + "'> <p>"+ name + "</p> </a> </li>"
 
 
     }
