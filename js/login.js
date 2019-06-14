@@ -27,4 +27,12 @@ formulario.onsubmit = function (event) {
 
 console.log(formulario);
 
+var Formulario = {
+  nombre: nombre.value,
+  email: email.value,
+  genero: option.value,
+}
+
+window.localStorage.setItem("", JSON.stringiyft(Formulario))
+
 })
