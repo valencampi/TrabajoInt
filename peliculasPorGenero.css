@@ -312,3 +312,32 @@ nav.mqMobile{
       padding: 15px;
       list-style: none;
     }
+
+    img.movie{
+      float: left;
+      width: 20%;
+    }
+    ul.ul2{
+      width: 80%;
+      overflow: hidden;
+      float: right;
+    }
+
+    ul li.li2{
+      width: 30%;
+      margin-bottom: 10px;
+    }
+
+    nav.final{
+      overflow: hidden;
+    }
+    button {
+      color: white;
+      background-color: transparent;
+      font-size: 15px;
+      font-family: 'Julius Sans One', sans-serif;
+      font-weight: 300;
+      border: 0;
+
+
+    }

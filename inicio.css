@@ -45,6 +45,7 @@ nav {
 nav.encabezado{
   overflow: hidden;
   background-color: #262626;
+  height: 14%;
   z-index: 3;
   position: fixed;
   width: 100%;
@@ -214,6 +215,13 @@ nav.mqMobile{
 
   button {
     color: white;
+    background-color: transparent;
+    font-size: 15px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 300;
+    border: 0;
+
+
   }
 
   li.logIn {
@@ -271,4 +279,23 @@ nav.mqMobile{
         display: block;
         width: 80%;
         padding: 0.5rem 1rem;
+    }
+
+    img.movie{
+      float: left;
+      width: 20%;
+    }
+    ul.ul2{
+      width: 80%;
+      overflow: hidden;
+      float: right;
+    }
+
+    ul li.li2{
+      width: 30%;
+      margin-bottom: 10px;
+    }
+
+    nav.final{
+      overflow: hidden;
     }

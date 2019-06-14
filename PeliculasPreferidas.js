@@ -1,4 +1,5 @@
 window.addEventListener("load",function () {
+  window.onload = function () {
   //media query event handler
   if(matchMedia){
       const mq = window.matchMedia( "(max-width:768px)" );//sets the width you want
@@ -24,4 +25,4 @@ window.addEventListener("load",function () {
       }
   }
 
-  })
+}})
