@@ -2,6 +2,7 @@ window.onload = function () {
 
     var urlParams = new URLSearchParams(window.location.search);
     var id = urlParams.get('idgenero');
+    var name = urlParams.get('name')
 
     var buscador = document.querySelector(".buscador1");
     buscador.onsubmit = function(e){
@@ -66,6 +67,9 @@ window.onload = function () {
 
           }
       }
+
+      var genero = document.querySelector('h1.title')
+      genero.innerText += name
 
     })
     .catch(function(error) {
