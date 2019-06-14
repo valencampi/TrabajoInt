@@ -2,6 +2,22 @@
 font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
+.preferidas {
+  display: none;
+}
+
+.nombre{
+  list-style-type: none;
+    text-align: center;
+    padding: 15px;
+    color: red;
+    font-style: italic;
+    float: left;
+    font-size: 15px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 300
+}
+
 body {
   background-color: black;
   height: 100vh;

@@ -50,7 +50,7 @@ fetch(url)
     li += "<h1 class='peli'>"+ titulo + "</h1>"
     li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
     li += "<p> <span class='underline'>Sinopsis</span>: "+ sinopsis + "</p>"
-    li += "<p> <span class='underline'>Generos</span>: "
+    li += "<p> <span class='underline'>Géneros</span>: "
           for (var i = 0; i < arrayGeneros.length; i++) {
             var id = arrayGeneros[i].id
             var genero = arrayGeneros[i].name
@@ -58,8 +58,8 @@ fetch(url)
       + "</p>"
     li += "<p> <span class='underline'>Idioma original:</span> "+ idioma + "</p>"
     li += "<p> <span class='underline'>Fecha de estreno:</span> "+ estreno + "</p>"
-    li += "<p> <span class='underline'>Su puntuacion es de :</span> "+ puntuacion + "</p>"
-    li +="<h2 class='trailer'> <span class='underline trailer'>Trailer:</span><br>"+ urlTrailer + "</br> </h2>"
+    li += "<p> <span class='underline'>Su puntuación es de :</span> "+ puntuacion + "</p>"
+    li +="<h2 class='trailer'> <span class='underline trailer'>Tráiler:</span><br>"+ urlTrailer + "</br> </h2>"
   li += "</li>"
 
   ul.innerHTML += li
