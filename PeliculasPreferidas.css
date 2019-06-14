@@ -46,7 +46,10 @@ nav.encabezado{
   z-index: 3;
   position: fixed;
   width: 100%;
+  height: 15%;
 }
+
+
 
 .header{
   top: 0;
