@@ -181,10 +181,11 @@ nav.mqMobile{
       height: 70px;
       width: 70px;
       float: left;
-      z-index: 3;
+
       border: 2px solid white;
       border-radius: 35px;
       display: block;
+      position: static;
 
 
     }
