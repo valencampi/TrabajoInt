@@ -5,6 +5,7 @@ if (sessionStorage.getItem("usuario") != null) {
   document.querySelector(".preferidas").style.display = "block"
   var usuario = document.querySelector(".nombre")
   usuario.innerHTML = sessionStorage.getItem("usuario")
+
 }
 
 var formulario = document.querySelector("form.uk-flex.uk-flex-column")
@@ -33,6 +34,8 @@ formulario.onsubmit = function (event) {
     document.querySelector(".logIn").style.display = "none"
     document.querySelector(".preferidas").style.display = "block"
     document.querySelector(".uk-modal-close").click()
+    var usuario = document.querySelector(".nombre")
+    usuario.innerHTML = nombre.value
   }
 }
 
