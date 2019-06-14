@@ -139,11 +139,13 @@ img {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+  margin-left: -39px;
+  margin-top: -20px;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: -16px;
   border-radius: 3px 0 0 3px;
 }
 
