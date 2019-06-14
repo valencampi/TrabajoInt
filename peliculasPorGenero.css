@@ -57,12 +57,13 @@ nav.encabezado{
   width: 70px;
   float: left;
   z-index: 3;
-  border: 1px solid white;
-  border-radius: 30px;
+  border: 2px solid white;
+  border-radius: 35px;
 }
 
 .nav {
   overflow: hidden;
+  margin-bottom: 0;
 }
 
 .li1 {
