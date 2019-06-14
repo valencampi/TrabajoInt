@@ -43,7 +43,7 @@ nav {
 nav.encabezado{
   overflow: hidden;
   background-color: #262626;
-  height: 14%;
+  height: 15%;
   z-index: 3;
   position: fixed;
   width: 100%;
