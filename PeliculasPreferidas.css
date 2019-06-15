@@ -112,6 +112,7 @@ footer{
   position: absolute;
   left: 0;
   background-color: #F3EDED;
+  bottom: 0;
 }
 
 .final{
@@ -198,6 +199,13 @@ nav.mqMobile{
 
   button {
     color: white;
+    background-color: transparent;
+    font-size: 15px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 300;
+    border: 0;
+
+
   }
 
   li.logIn {
@@ -256,6 +264,7 @@ nav.mqMobile{
         width: 80%;
         padding: 0.5rem 1rem;
     }
+
     img.movie{
       float: left;
       width: 20%;
@@ -273,14 +282,5 @@ nav.mqMobile{
 
     nav.final{
       overflow: hidden;
-    }
-    button {
-      color: white;
-      background-color: transparent;
-      font-size: 15px;
-      font-family: 'Julius Sans One', sans-serif;
-      font-weight: 300;
-      border: 0;
-
-
+      bottom: 0;
     }
