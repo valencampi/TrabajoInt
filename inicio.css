@@ -53,6 +53,8 @@ nav.encabezado{
 }
 
 
+
+
 .header{
   top: 0;
   left: 0;
@@ -93,6 +95,10 @@ li.logIn {
   color: white;
 }
 
+li.logInMq {
+  display: none
+}
+
 form input{
   margin-bottom: 15px
 }
@@ -117,7 +123,7 @@ li.buscador{
   font-family: 'Julius Sans One', sans-serif;
   font-weight: bolder;
   font-size: 18px;
-  margin-top: -100px;
+  margin-top: -92px;
 }
 
 
@@ -169,6 +175,9 @@ nav.mqMobile{
     right: 1em;
     top: 2em;
 }
+.uk-navbar-nav{ display:none; }
+
+
 .h-40{
     height: 40px !important;
     min-height: 40px;
@@ -224,11 +233,16 @@ nav.mqMobile{
 
   }
 
-  li.logIn {
+  li.logInMq {
     float: left;
     list-style-type: none;
     text-align: center;
     width: 100%;
+  }
+
+  .preferidasMq {
+    display: none;
+
   }
 
   .li1 {

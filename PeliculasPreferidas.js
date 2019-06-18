@@ -25,4 +25,32 @@ window.addEventListener("load",function () {
       }
   }
 
+  //PELIS PREFERIDAS//
+  arrayDePelisfavoritas = JSON.parse(window.sessionStorage.getItem("favorita")
+
+  if (.lenght>0) {
+
+    for (var i = 0; i < arrayDePelisfavoritas.length; i++) {
+
+      var urll = "" + arrayDePelisfavoritas[i]
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
 }})

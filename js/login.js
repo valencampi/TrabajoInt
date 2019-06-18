@@ -3,6 +3,8 @@ window.addEventListener("load",function () {
 if (sessionStorage.getItem("usuario") != null) {
   document.querySelector(".logIn").style.display = "none"
   document.querySelector(".preferidas").style.display = "block"
+  document.querySelector(".logInMq").style.display = "none"
+  document.querySelector(".preferidasMq").style.display = "block"
   var usuario = document.querySelector(".nombre")
   usuario.innerHTML = sessionStorage.getItem("usuario")
 
