@@ -3,7 +3,7 @@ window.onload = function () {
     var urlParams = new URLSearchParams(window.location.search);
     var query = urlParams.get('buscador');
 
-    // que se acuerde lo que busuqe
+    // que se acuerde lo que busque
     document.querySelector("#input").value = query
 
     var buscador = document.querySelector(".buscador1");
@@ -11,7 +11,7 @@ window.onload = function () {
       resultado = document.querySelector(".resultado").value;
       if(resultado.length == 0 || resultado.length < 3){
         console.log(resultado.length);
-        alert("+ter ingresa mas de 3 letras")
+        alert("+ter ingresa mas de 3 letras") =
         e.preventDefault();
       }
     }
