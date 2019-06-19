@@ -81,7 +81,52 @@ var iframe = document.querySelector("iframe.iframe")
     return console.log("Error" + error);
   })
 
-  /*BUSCADOR*/
+
+// recomendaciones
+var urlParams = new URLSearchParams(window.location.search);
+var query = urlParams.get("id");
+var url = "https://api.themoviedb.org/3/movie/"+ query + "/recommendations?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US&page=1"
+
+fetch(url)
+  .then(function(respond) {
+    return respond.json();
+  })
+
+  .then(function(data) {
+    console.log(data);
+
+    var ul = document.querySelector("ul.recomen")
+
+    for (var i = 0; i < data.results.length; i++) {
+      var id = data.results[i].id;
+      var title = data.results[i].title;
+      var foto = data.results[i].poster_path;
+
+      li = "<li>"
+        li += "<p>"+ title + "</p>"
+        li += "<a href='peliculas.html?id=" + id + "'>"
+        li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+        li += "</a>"
+      li += "</li>"
+
+      ul.innerHTML += li
+
+    }
+
+  })
+
+
+
+  .catch(function(error) {
+    return console.log("Error" + error);
+  })
+
+  var recom = document.querySelector ('button.recomendaciones')
+  recom.addEventListener ("click", function() {
+    var ul = document.querySelector("ul.recomen")
+    ul.classList.toggle("display-none")
+  })
+
 
   //media query event handler
   if(matchMedia){

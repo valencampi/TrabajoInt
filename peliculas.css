@@ -171,6 +171,12 @@ span.underline{
   font-family: 'Julius Sans One', sans-serif;
 }
 
+.display-none{
+  display: none;
+}
+
+/* recomendaciones */
+
 
 /* footer */
 footer{
