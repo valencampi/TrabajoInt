@@ -101,10 +101,10 @@ fetch(url)
       var title = data.results[i].title;
       var foto = data.results[i].poster_path;
 
-      li = "<li class='li'>"
-        li += "<p class='titulos'>"+ title + "</p>"
+      li = "<li>"
+        li += "<p>"+ title + "</p>"
         li += "<a href='peliculas.html?id=" + id + "'>"
-        li += "<img class='imgPelis'src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+        li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
         li += "</a>"
       li += "</li>"
 
@@ -113,8 +113,6 @@ fetch(url)
     }
 
   })
-
-
 
   .catch(function(error) {
     return console.log("Error" + error);
@@ -125,9 +123,6 @@ fetch(url)
     var ul = document.querySelector("ul.recomen")
     ul.classList.toggle("display-none")
   })
-
-
-
 
 
   //media query event handler
@@ -154,10 +149,6 @@ fetch(url)
           $("#navbar_collapse").removeClass('dis-none');
       }
   }
-
-
-
-
 
 
 })
