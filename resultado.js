@@ -11,7 +11,12 @@ window.addEventListener("load",function(){
       resultado = document.querySelector(".resultado").value;
       if(resultado.length == 0 || resultado.length < 3){
         console.log(resultado.length);
-        alert("+ter ingresa mas de 3 letras") =
+        UIkit.notification({
+            message: '<br>Ingresa más de 3 caracteres',
+            status: 'danger',
+            pos: 'top-right',
+            timeout: 3000
+        });
         e.preventDefault();
       }
     }
