@@ -3,6 +3,8 @@ window.onload = function () {
     var urlParams = new URLSearchParams(window.location.search);
     var query = urlParams.get('buscador');
 
+    // que se acuerde lo que busuqe
+    document.querySelector("#input").value = query
 
     var buscador = document.querySelector(".buscador1");
     buscador.onsubmit = function(e){
@@ -73,6 +75,7 @@ window.onload = function () {
     .catch(function(error) {
       console.log("Error" + error) ;
     })
+
 
     //media query event handler
     if(matchMedia){
