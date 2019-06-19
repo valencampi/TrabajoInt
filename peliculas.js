@@ -49,7 +49,7 @@ fetch(url)
   li = "<li>"
     li += "<h1 class='peli'>"+ titulo + "</h1>"
     li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
-    li += "<button class= 'estrellita'> &#9733 </button>"
+    li += "<button onclick= 'agregarFavoritos()'class= 'estrellita'> &#9733 </button>"
     li += "<p> <span class='underline'>Sinopsis</span>: "+ sinopsis + "</p>"
     li += "<p> <span class='underline'>Géneros</span>: "
           for (var i = 0; i < arrayGeneros.length; i++) {
@@ -64,6 +64,39 @@ fetch(url)
   li += "</li>"
 
   ul.innerHTML += li
+
+  //PELIS PREFERIDAS//
+
+  // var arrayPelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita"))
+  //
+  //     // function agregarFavoritos(id) {
+  //       var boton = document.querySelector(".estrellita")
+  //       console.log(boton.name);
+  //       boton.addEventListener("click",function(){
+  //
+  //         alert("me clickearon!")
+  //
+  //         if (arrayPelisFavoritas == null) {
+  //           arrayPelisFavoritas = []
+  //           arrayPelisFavoritas.push(boton.name)
+  //           window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
+  //
+  //         }else if(arrayPelisFavoritas.indexOf(boton.name)===-1){
+  //
+  //           arrayPelisFavoritas.push(boton.name)
+  //           window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
+  //
+  //         } else {
+  //           console.log(arrayPelisFavoritas.indexOf(boton.name));
+  //           arrayPelisFavoritas.splice(arrayPelisFavoritas.indexOf(boton.name),1);
+  //           console.log(arrayPelisFavoritas)
+  //           window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
+  //         }
+  //
+  //         console.log(boton.name);
+  //         console.log(JSON.parse(window.sessionStorage.getItem("favorita")));
+
+
 
 // que desaparezca la palabra trailer si no hay trailer
 var iframe = document.querySelector("iframe.iframe")
