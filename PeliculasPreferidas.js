@@ -25,6 +25,61 @@ window.addEventListener("load",function () {
       }
   }
 
+var arrayPeliculas= JSON.parse(window.sessionStorage.getItem("favorita"))
+console.log(arrayPeliculas);
+for (var i = 0; i < arrayPeliculas.length; i++) {
+
+  var id = arrayPeliculas[i]
+  var urlDeId = "https://api.themoviedb.org/3/movie/" + id + "?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US"
+
+  fetch(urlDeId)
+  .then(function(respond) {
+    return respond.json()
+  })
+  .then(function(id){
+      var ul = document.querySelector("section ul")
+
+      titulo = id.title
+      console.log(titulo);
+
+      poster = id.poster_path
+      console.log(poster);
+      var url = "https://image.tmdb.org/t/p/original" + poster
+      fechaDeLanzamiento = id.release_date
+      console.log(fechaDeLanzamiento);
+
+      puntuacion = id.vote_average
+      console.log(puntuacion);
+
+      var li;
+
+      li= "<li>"
+      li+= "<a href= ''> </a> "
+      li+= "<h2>"+titulo+"</h2>"
+      li += "<img class='imgPelis' class='info' src=" + url  + ">"
+
+      if (fechaDeLanzamiento!= null) {
+        li += "<p class='puntuacion'> <span> Lanzada el:</span> " + fechaDeLanzamiento + "</p>"
+      }
+      li += "<p class='puntuacion'> <span> Puntuación:</span> " + puntuacion  + "/10</p>"
+    li += "</li>"
+
+    ul.innerHTML += li
+
+
+
+  })
+  .catch(function(error) {
+    console.log("Error" + error) ;
+  })
+
+
+
+
+
+
+}
+
 
 
 
