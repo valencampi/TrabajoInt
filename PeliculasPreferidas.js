@@ -26,15 +26,35 @@ window.addEventListener("load",function () {
   }
 
   //PELIS PREFERIDAS//
-  arrayDePelisfavoritas = JSON.parse(window.sessionStorage.getItem("favorita")
 
-  if (.lenght>0) {
+  var arrayPelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita"))
 
-    for (var i = 0; i < arrayDePelisfavoritas.length; i++) {
+      // function agregarFavoritos(id) {
+        var boton = document.querySelector("#botonFavorito")
+        console.log(boton.name);
+        boton.addEventListener("click",function(){
 
-      var urll = "" + arrayDePelisfavoritas[i]
+          alert("me clickearon!")
 
-    }
+          if (arrayPelisFavoritas == null) {
+            arrayPelisFavoritas = []
+            arrayPelisFavoritas.push(boton.name)
+            window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
+
+          }else if(arrayPelisFavoritas.indexOf(boton.name)===-1){
+
+            arrayPelisFavoritas.push(boton.name)
+            window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
+
+          } else {
+            console.log(arrayPelisFavoritas.indexOf(boton.name));
+            arrayPelisFavoritas.splice(arrayPelisFavoritas.indexOf(boton.name),1);
+            console.log(arrayPelisFavoritas)
+            window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
+          }
+
+          console.log(boton.name);
+          console.log(JSON.parse(window.sessionStorage.getItem("favorita")));
 
 
 
@@ -42,15 +62,4 @@ window.addEventListener("load",function () {
 
 
 
-
-
-
-
-  }
-
-
-
-
-
-
-}})
+})

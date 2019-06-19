@@ -30,7 +30,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=6e11caa7480bb2cb18a5bf
     li = "<li class='mySlides'>"}
       li += "<div class='numbertext'>" +(i+1) + "/" +cantidadDePelis+ " <div/>"
       li += "<p class='opacidad'>"+ title + "</p>"
-      li += "<button onclick='agregarFavoritos()' class= 'estrellita'> &#9733; </button>"
+
       li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
     li += "</li>"
 
@@ -76,7 +76,7 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=6e11caa7480bb2cb18a5
     }
       li += "<div class='numbertext1'>" +(i+1) + "/" +cantidadDePelis+ " <div/>"
       li += "<p class='opacidad'>"+ title + "</p>"
-      li += "<button onclick='agregarFavoritos()' class= 'estrellita'> &#9733; </button>"
+
       li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
     li += "</li>"
 
@@ -123,7 +123,7 @@ fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=6e11caa7480bb2cb18a5b
 
     li += "<div class='numbertext2'>" +(i+1) + "/" +cantidadDePelis+ " <div/>"
     li += "<p class='opacidad'>"+ title + "</p>"
-    li += "<button onclick='agregarFavoritos()' class= 'estrellita'> &#9733; </button>"
+
     li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
   li += "</li>"
 
@@ -168,39 +168,6 @@ fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=6e11caa7480bb2cb18a5b
       }
   }
 
-  //PELICULAS FAVORITAS//
-
-
- var arrayDePelisfavoritas = []
-function agregarFavoritos(id) {
-  alert("Agregaste a favoritos")
-  //me tengo que fijar si hay un apeli favorita//
-if (arrayDePelisfavoritas.indexOf(id)===-1) {
-  //EN ESTE CASONO ES FAVORITA, PUSHEO EL ID DENTRO DEL ARRAY //
-  arrayDePelisfavoritas.push(id)
-  //guardo en session el array,como es un objeto debo transformarlo a string//
-  window.sessionStorage.getItem("favorita", JSON.stringify(arrayDePelisfavoritas))
-
-
-} else{
-   //ESTA PELI YA ES FAVORITA, LA SACO DEL ARRAY//
-  console.log(arrayDePelisfavoritas.indexOf(id));
-  //LO SACO DEL ARRAY//
-  arrayDePelisfavoritas.splice(arrayDePelisfavoritas.indexOf(id),1,id)
-  console.log(arrayDePelisfavoritas);
-  //REEMPLAZO EL ARRAY QUE TENIA LA PELI COMO FAVORITA POR EL ARRAY QUE YA NO LA TIENE//
-  console.log(JSON.parse(window.sessionStorage.getItem("favorita")));
-
-
-
-}
-
-console.log(id);
-console.log(JSON.parse(window.sessionStorage.getItem("favorita")));
-
-
-
-}
 
 
 }})
