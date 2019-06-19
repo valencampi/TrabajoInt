@@ -125,7 +125,7 @@ function agregarFavoritos(id){
     arrayPelisFavoritas.splice(arrayPelisFavoritas.indexOf(id),1);
     console.log(arrayPelisFavoritas);
     window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
-    document.querySelector(".estrellita").style.backgroundColor = "transparent"
+    document.querySelector(".estrellita").style.backgroundColor = "inherit"
   }
 
   console.log(id);
