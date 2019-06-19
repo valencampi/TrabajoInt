@@ -52,8 +52,8 @@ fetch(url)
     li += "<p> <span class='underline'>Sinopsis</span>: "+ sinopsis + "</p>"
     li += "<p> <span class='underline'>Géneros</span>: "
           for (var i = 0; i < arrayGeneros.length; i++) {
-            var id = arrayGeneros[i].id
-            var genero = arrayGeneros[i].name
+            var genero = arrayGeneros[i].name;
+            var split = genero.split(",");
           li += genero}
       + "</p>"
     li += "<p> <span class='underline'>Idioma original:</span> "+ idioma + "</p>"
@@ -61,6 +61,8 @@ fetch(url)
     li += "<p> <span class='underline'>Puntuación:</span> "+ puntuacion + "</p>"
     li +="<h2 class='trailer'> <span class='underline trailer'>Tráiler:</span><br>"+ urlTrailer + "</br> </h2>"
   li += "</li>"
+
+  console.log(arrayGeneros);
 
   ul.innerHTML += li
 
