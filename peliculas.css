@@ -49,6 +49,10 @@ nav.encabezado{
   width: 100%;
 }
 
+nav.mqMobile{
+  display: none;
+}
+
 .header{
   top: 0;
   left: 0;
@@ -98,6 +102,10 @@ li.buscador{
   text-align: center;
   padding: 15px;
   color: white;
+}
+
+li.logInMq {
+  display: none
 }
 
 /* body */
@@ -200,10 +208,6 @@ footer{
 
 ////////////////////////
 
-nav.mqMobile{
-  display: none;
-}
-
 .dis-none{
     display: none;
 }
@@ -212,6 +216,8 @@ nav.mqMobile{
     right: 1em;
     top: 2em;
 }
+
+.uk-navbar-nav{ display:none; }
 .h-40{
     height: 40px !important;
     min-height: 40px;
@@ -234,116 +240,126 @@ nav.mqMobile{
     display: ;
   }
 
-@media screen and (max-width:768px){
-  .logoMq {
-      margin: 10px;
-      height: 70px;
-      width: 70px;
-      float: left;
+  @media screen and (max-width:768px){
 
-      border: 2px solid white;
-      border-radius: 35px;
-      display: block;
-      position: static;
-
-
-    }
-    .botonBuscar{
-      display: none;
-    }
-
-    .resultado{
-      text-align: center;
-    }
-
-  button {
-    color: white;
-  }
-
-  li.logIn {
-    float: left;
-    list-style-type: none;
-    text-align: center;
-    width: 100%;
-  }
-
-  .li1 {
-    list-style-type: none;
-    text-align: center;
-    padding: 5px;
-    color: white;
-    float: left;
-    font-size: 15px;
-    font-family: 'Julius Sans One', sans-serif;
-    font-weight: 300;
-    width: 100%;
-  }
-
-    li.buscador{
-      float: left;
-      width: 100%;
-    }
-
-    li.l1 {
-      float: left;
-    }
-    nav.encabezado{
-    display: none;
-    }
-
-    nav.uk-navbar-container{
+    nav.mqMobile{
       display: block;
     }
+    .logoMq {
+        margin: 10px;
+        height: 70px;
+        width: 70px;
+        float: left;
+
+        border: 2px solid white;
+        border-radius: 35px;
+        display: block;
+        position: static;
 
 
-    .uk-navbar-left{
+      }
+      .botonBuscar{
+        display: none;
+      }
+
+      .resultado{
+        text-align: center;
+      }
+
+
+
+      li.logInMq {
+        float: left;
+        list-style-type: none;
+        text-align: center;
         width: 100%;
-        background-color: #262626;
+      }
 
-    }
-    .uk-navbar-item{ display: inline; }
+      .preferidasMq {
+        display: none;
 
-    .uk-navbar-nav{ display:block; }
-    .navbar-collapse{ width:100%; }
-    .uk-navbar-nav li{
-        display: block;
-        padding: 10px;
-        height: 40px;
-        border-bottom: 1px solid #ddd;
-    }
-    .uk-navbar-nav li a{
-        display: block;
-        width: 80%;
-        padding: 0.5rem 1rem;
-    }
-    img.movie{
-      float: left;
-      width: 20%;
-    }
-    ul.ul2{
-      width: 80%;
-      overflow: hidden;
-      float: right;
-    }
+      }
 
-    ul li.li2{
-      width: 30%;
-      margin-bottom: 10px;
-    }
 
-    nav.final{
-      overflow: hidden;
-    }
-
-    button {
+    .li1 {
+      list-style-type: none;
+      text-align: center;
+      padding: 5px;
       color: white;
-      background-color: transparent;
+      float: left;
       font-size: 15px;
       font-family: 'Julius Sans One', sans-serif;
       font-weight: 300;
-      border: 0;
-
-
+      width: 100%;
     }
 
-    
+      li.buscador{
+        float: left;
+        width: 100%;
+      }
+
+      li.l1 {
+        float: left;
+      }
+      nav.encabezado{
+      display: none;
+      }
+
+      nav.uk-navbar-container{
+        display: block;
+      }
+
+
+      .uk-navbar-left{
+          width: 100%;
+          background-color: #262626;
+
+      }
+      .uk-navbar-item{ display: inline; }
+
+      .uk-navbar-nav{ display:block; }
+      .navbar-collapse{ width:100%; }
+      .uk-navbar-nav li{
+          display: block;
+          padding: 10px;
+          height: 40px;
+          border-bottom: 1px solid #ddd;
+      }
+      .uk-navbar-nav li a{
+          display: block;
+          width: 80%;
+          padding: 0.5rem 1rem;
+      }
+      img.movie{
+        float: left;
+        width: 20%;
+      }
+      ul.ul2{
+        width: 80%;
+        overflow: hidden;
+        float: right;
+      }
+
+      ul li.li2{
+        width: 30%;
+        margin-bottom: 10px;
+      }
+
+      nav.final{
+        overflow: hidden;
+      }
+
+      button {
+        color: white;
+        background-color: transparent;
+        font-size: 15px;
+        font-family: 'Julius Sans One', sans-serif;
+        font-weight: 300;
+        border: 0;
+
+
+      }
+
+      ul.nav{
+        width: 100%;
+      }

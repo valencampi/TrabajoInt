@@ -86,6 +86,11 @@ li.logIn {
 
 }
 
+li.logInMq {
+  display: none
+}
+
+
 form input{
   margin-bottom: 15px
 }
@@ -214,13 +219,11 @@ nav.mqMobile{
     position: fixed;
     display: none;
 
-
-
-
   }
   .logo{
     display: ;
   }
+  .uk-navbar-nav{ display:none; }
 
 @media screen and (max-width:768px){
   .logoMq {
@@ -248,12 +251,18 @@ nav.mqMobile{
     color: white;
   }
 
-  li.logIn {
+  li.logInMq {
     float: left;
     list-style-type: none;
     text-align: center;
     width: 100%;
   }
+
+  .preferidasMq {
+    display: none;
+
+  }
+
 
   .li1 {
     list-style-type: none;
@@ -340,4 +349,7 @@ nav.mqMobile{
       border: 0;
 
 
+    }
+    ul.nav{
+      width: 100%;
     }

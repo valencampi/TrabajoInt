@@ -48,6 +48,10 @@ nav.encabezado{
   height: 15%;
 }
 
+nav.mqMobile{
+  display: none;
+}
+
 
 .header{
   top: 0;
@@ -86,8 +90,12 @@ li.logIn {
   text-align: center;
   padding: 15px;
   color: white;
+
 }
 
+li.logInMq {
+  display: none
+}
 form input{
   margin-bottom: 15px
 }
@@ -175,11 +183,9 @@ footer{
   left: 5px;
 }
 
+
 ////////////////////////
 
-nav.mqMobile{
-  display: none;
-}
 
 .dis-none{
     display: none;
@@ -189,6 +195,9 @@ nav.mqMobile{
     right: 1em;
     top: 2em;
 }
+.uk-navbar-nav{ display:none; }
+
+
 .h-40{
     height: 40px !important;
     min-height: 40px;
@@ -204,14 +213,18 @@ nav.mqMobile{
     display: none;
 
 
-
-
   }
   .logo{
     display: ;
   }
 
+
 @media screen and (max-width:768px){
+
+  nav.mqMobile{
+    display: block;
+  }
+  
   .logoMq {
       margin: 10px;
       height: 70px;
@@ -237,12 +250,17 @@ nav.mqMobile{
     color: white;
   }
 
-  li.logIn {
-    float: left;
-    list-style-type: none;
-    text-align: center;
-    width: 100%;
-  }
+  li.logInMq {
+   float: left;
+   list-style-type: none;
+   text-align: center;
+   width: 100%;
+ }
+
+ .preferidasMq {
+   display: none;
+
+ }
 
   .li1 {
     list-style-type: none;
@@ -300,4 +318,8 @@ nav.mqMobile{
 
     h1 {
       text-align: center;
+    }
+
+    ul.nav{
+      width: 100%;
     }

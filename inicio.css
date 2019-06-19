@@ -123,7 +123,7 @@ li.buscador{
   font-family: 'Julius Sans One', sans-serif;
   font-weight: bolder;
   font-size: 18px;
-  margin-top: -92px;
+  margin-top: -55px;
 }
 
 
@@ -191,8 +191,6 @@ nav.mqMobile{
     border-radius: 35px;
     position: fixed;
     display: none;
-
-
 
 
   }
