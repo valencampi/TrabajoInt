@@ -8,7 +8,7 @@ window.addEventListener("load",function(){
 
     var buscador = document.querySelector(".buscador1");
     buscador.onsubmit = function(e){
-      resultado = document.querySelector(".resultado").value;
+    resultado = document.querySelector(".resultado").value;
       if(resultado.length == 0 || resultado.length < 3){
         console.log(resultado.length);
         UIkit.notification({
