@@ -106,6 +106,10 @@ li.buscador{
 
 /* body */
 
+h1.title{
+  margin-top: -90px;
+}
+
 .titulos {
   text-decoration: underline;
 }
@@ -155,6 +159,8 @@ span{
   text-decoration: underline;
   font-family: 'Julius Sans One', sans-serif;
 }
+
+
 
 
 /* footer */
