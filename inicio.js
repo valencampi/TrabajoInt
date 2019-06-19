@@ -1,5 +1,5 @@
 window.addEventListener("load",function () {
-  window.onload = function () {
+
 
 
 // peliculas mas populares
@@ -170,4 +170,4 @@ fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=6e11caa7480bb2cb18a5b
 
 
 
-}})
+})
