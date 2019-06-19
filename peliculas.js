@@ -101,10 +101,10 @@ fetch(url)
       var title = data.results[i].title;
       var foto = data.results[i].poster_path;
 
-      li = "<li>"
-        li += "<p>"+ title + "</p>"
+      li = "<li class='li'>"
+        li += "<p class='titulos'>"+ title + "</p>"
         li += "<a href='peliculas.html?id=" + id + "'>"
-        li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
+        li += "<img class=imgPelis src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
         li += "</a>"
       li += "</li>"
 
