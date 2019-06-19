@@ -127,6 +127,9 @@ fetch(url)
   })
 
 
+
+
+
   //media query event handler
   if(matchMedia){
       const mq = window.matchMedia( "(max-width:768px)" );//sets the width you want
@@ -151,6 +154,10 @@ fetch(url)
           $("#navbar_collapse").removeClass('dis-none');
       }
   }
+
+
+
+  
 
 
 })
