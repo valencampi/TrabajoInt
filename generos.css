@@ -284,6 +284,14 @@ footer{
       display: block;
     }
 
+    .subtitulos {
+        color: white !important;
+        text-decoration: underline;
+        font-family: 'Julius Sans One', sans-serif;
+        font-weight: bolder;
+        font-size: 18px;
+        margin-top: -90px;
+    }
 
     .uk-navbar-left{
         width: 100%;
