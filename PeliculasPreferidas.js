@@ -51,12 +51,16 @@ for (var i = 0; i < arrayPeliculas.length; i++) {
       puntuacion = id.vote_average
       console.log(puntuacion);
 
+      var url = "https://image.tmdb.org/t/p/original" + poster
+
       var li;
 
-      li= "<li>"
+      li= "<li class= 'liPelis'>"
       li+= "<a href= ''> </a> "
       li+= "<h2>"+titulo+"</h2>"
+      li += "<a href='peliculas.html?id='"+ id +"'>"
       li += "<img class='imgPelis' class='info' src=" + url  + ">"
+      li += "</a>"
 
       if (fechaDeLanzamiento!= null) {
         li += "<p class='puntuacion'> <span> Lanzada el:</span> " + fechaDeLanzamiento + "</p>"

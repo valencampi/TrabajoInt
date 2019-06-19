@@ -85,6 +85,7 @@ nav.mqMobile{
   font-weight: 300;
 }
 
+
 li.logIn {
   float: right;
   list-style-type: none;
@@ -110,6 +111,45 @@ li.buscador{
   color: white;
 }
 
+/*Resultados de busqueda*/
+
+img.imgPelis {
+  float: left;
+  width: 100%;
+  height: 400px;
+  padding: 5px;
+}
+
+section ul{
+  overflow: hidden;
+  margin: 0;
+}
+
+li.liPelis {
+  float: left;
+  width: 20%;
+  height: 20%;
+  padding: 15px;
+  list-style: none;
+}
+
+p.puntuacion {
+  text-align: center;
+  color: white;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+p.titulos{
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  height: 27px;
+  color: white;
+}
+
+span{
+  text-decoration: underline;
+  font-family: 'Julius Sans One', sans-serif;
+}
 
 
 /* footer */
@@ -120,7 +160,6 @@ footer{
   position: absolute;
   left: 0;
   background-color: #F3EDED;
-  bottom: 0;
 }
 
 .final{
@@ -146,6 +185,7 @@ footer{
   top: 9px;
   left: 5px;
 }
+
 
 ////////////////////////
 
