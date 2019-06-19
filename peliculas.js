@@ -46,89 +46,37 @@ fetch(url)
     var foto = detalle.poster_path
     var puntuacion = detalle.vote_average
 
-  li = "<li>"
+    li = "<li>"
     li += "<h1 class='peli'>"+ titulo + "</h1>"
     li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
-    li += "<button class= 'estrellita'> &#9733 </button>"
+    li += "<button class='estrellita' onclick='agregarFavoritos("+id+")'> &#9733 </button>"
     li += "<p> <span class='underline'>Sinopsis</span>: "+ sinopsis + "</p>"
     li += "<p> <span class='underline'>Géneros</span>: "
-          for (var i = 0; i < arrayGeneros.length; i++) {
-            var id = arrayGeneros[i].id
-            var genero = arrayGeneros[i].name
-          li += genero}
-      + "</p>"
+        for (var i = 0; i < arrayGeneros.length; i++) {
+          var id = arrayGeneros[i].id
+          var genero = arrayGeneros[i].name
+          li += genero
+        }
+    li += "</p>"
     li += "<p> <span class='underline'>Idioma original:</span> "+ idioma + "</p>"
     li += "<p> <span class='underline'>Fecha de estreno:</span> "+ estreno + "</p>"
     li += "<p> <span class='underline'>Puntuación:</span> "+ puntuacion + "</p>"
     li +="<h2 class='trailer'> <span class='underline trailer'>Tráiler:</span><br>"+ urlTrailer + "</br> </h2>"
-  li += "</li>"
+    li += "</li>"
 
-  ul.innerHTML += li
-
-  //PELIS PREFERIDAS//
-
-  var arrayPelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita"))
-
-  if (arrayPelisFavoritas== null){
-
-  } else if(arrayPelisFavoritas.indexOf(query)===-1){
+    ul.innerHTML += li
 
 
-          } else {
-            document.querySelector(".estrellita").style.backgroundColor = "gold"
+    // que desaparezca la palabra trailer si no hay trailer
+    var iframe = document.querySelector("iframe.iframe")
+      console.log(iframe);
+      console.log(typeof iframe);
 
-
-        }
-
-        //function agregarFavoritos//
-        var botonn = document.querySelector(".estrellita")
-        console.log(botonn.name);
-        botonn.addEventListener("click", function(){
-
-          if (arrayPelisFavoritas == null) {
-            arrayPelisFavoritas= []
-            arrayPelisFavoritas.push(botonn.name)
-            window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
-
-
-          }else if (arrayPelisFavoritas.indexOf(botonn.name)===-1) {
-            arrayPelisFavoritas.push(botonn.name)
-            window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
-            document.querySelector(".estrellita").style.backgroundColor = "gold"
-
-
-          }else {
-            console.log(arrayPelisFavoritas.push(botonn.name));
-            arrayPelisFavoritas.splice(arrayPelisFavoritas.indexOf(botonn.name),1);
-            console.log(arrayPelisFavoritas);
-            window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
-            document.querySelector(".estrellita").style.backgroundColor = "white"
-          }
-
-          console.log(botonn.name);
-          console.log(JSON.parse(window.sessionStorage.getItem("favorita")));
-
-
-        })
-
-
-
-
-
-
-// que desaparezca la palabra trailer si no hay trailer
-var iframe = document.querySelector("iframe.iframe")
-  console.log(iframe);
-  console.log(typeof iframe);
-
-  if (iframe === null) {
-    document.querySelector("h2.trailer").innerText = ""
-  }
+      if (iframe === null) {
+        document.querySelector("h2.trailer").innerText = ""
+      }
 
   })
-//
-
-
   .catch(function(error) {
     return console.log("Error" + error);
   })

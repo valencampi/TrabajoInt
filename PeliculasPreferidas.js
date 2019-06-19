@@ -1,5 +1,5 @@
 window.addEventListener("load",function () {
-  window.onload = function () {
+
   //media query event handler
   if(matchMedia){
       const mq = window.matchMedia( "(max-width:768px)" );//sets the width you want
@@ -25,14 +25,51 @@ window.addEventListener("load",function () {
       }
   }
 
-  
-
-
-
-
 
 
 
 
 
 })
+//function agregarFavoritos//
+
+function agregarFavoritos(id){
+
+  // trailer pelicula
+  var urlParams = new URLSearchParams(window.location.search);
+  var query = urlParams.get("id");
+
+  //PELIS PREFERIDAS//
+
+  var arrayPelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita"))
+
+  if (arrayPelisFavoritas== null){
+
+  } else if(arrayPelisFavoritas.indexOf(query)===-1){
+
+  } else {
+    document.querySelector(".estrellita").style.backgroundColor = "gold"
+  }
+
+  if (arrayPelisFavoritas == null) {
+    arrayPelisFavoritas= []
+    arrayPelisFavoritas.push(id)
+    window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
+
+  }else if (arrayPelisFavoritas.indexOf(id)===-1) {
+    arrayPelisFavoritas.push(id)
+    window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
+    document.querySelector(".estrellita").style.backgroundColor = "gold"
+
+  }else {
+    console.log(arrayPelisFavoritas);
+    arrayPelisFavoritas.splice(arrayPelisFavoritas.indexOf(id),1);
+    console.log(arrayPelisFavoritas);
+    window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
+    document.querySelector(".estrellita").style.backgroundColor = "transparent"
+  }
+
+  console.log(id);
+  console.log(JSON.parse(window.sessionStorage.getItem("favorita")));
+
+}

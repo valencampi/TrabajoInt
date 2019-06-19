@@ -1,4 +1,4 @@
-window.onload = function () {
+window.addEventListener("load",function(){
 
     var urlParams = new URLSearchParams(window.location.search);
     var query = urlParams.get('buscador');
@@ -33,8 +33,6 @@ window.onload = function () {
       var poster = ""
       var fechaDeLanzamiento = ""
       var puntuacion = ""
-
-
 
       for (var i = 0; i < arrayDeResultados.length; i++) {
           console.log(arrayDeResultados[i]);
@@ -103,4 +101,4 @@ window.onload = function () {
     }
 
 
-  }
+  })
