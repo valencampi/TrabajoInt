@@ -112,33 +112,6 @@ li.buscador{
 }
 
 /*Resultados de busqueda*/
-
-img.imgPelis {
-  float: left;
-  width: 100%;
-  height: 400px;
-  padding: 5px;
-}
-
-section ul{
-  overflow: hidden;
-  margin: 0;
-}
-
-li.liPelis {
-  float: left;
-  width: 20%;
-  height: 20%;
-  padding: 15px;
-  list-style: none;
-}
-
-p.puntuacion {
-  text-align: center;
-  color: white;
-  font-family: 'Julius Sans One', sans-serif;
-}
-
 p.titulos{
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
@@ -146,11 +119,20 @@ p.titulos{
   color: white;
 }
 
-span{
-  text-decoration: underline;
-  font-family: 'Julius Sans One', sans-serif;
+ul.ull{
+  overflow: hidden;
+  margin: 117px;
 }
 
+li.liPelis{
+  float: left;
+}
+
+img.imgPelis {
+  float: left;
+  height: 400px;
+  padding: 5px;
+}
 
 /* footer */
 footer{

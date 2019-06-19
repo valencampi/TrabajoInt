@@ -1,34 +1,10 @@
 window.addEventListener("load",function () {
 
-  //media query event handler
-  if(matchMedia){
-      const mq = window.matchMedia( "(max-width:768px)" );//sets the width you want
-      mq.addListener(WidthChange);
-      WidthChange(mq)
-  }
-
-  function WidthChange(mq){
-      if(mq.matches){
-          //if window width is less than or equal to 768px;
-          $("#navbar_toggle").removeClass("dis-none"); //makes toggler visible
-          $("#navbar_collapse").addClass("dis-none");//makes the menu not visible initially
-          //so you can only see the menu items when you click the toggler
-
-          $("#navbar_toggle").on('click', function(e){
-              $("#navbar_collapse").slideToggle();
-              $("#navbar_collapse").css({"display": "block"});
-          })
-      }else{
-          //for larger screens
-          $("#navbar_toggle").addClass('dis-none');
-          $("#navbar_collapse").removeClass('dis-none');
-      }
-  }
 
 var arrayPeliculas= JSON.parse(window.sessionStorage.getItem("favorita"))
 console.log(arrayPeliculas);
 for (var i = 0; i < arrayPeliculas.length; i++) {
-
+console.log(arrayPeliculas[i]);
   var id = arrayPeliculas[i]
   var urlDeId = "https://api.themoviedb.org/3/movie/" + id + "?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US"
 
@@ -52,22 +28,13 @@ for (var i = 0; i < arrayPeliculas.length; i++) {
       console.log(puntuacion);
 
       var url = "https://image.tmdb.org/t/p/original" + poster
-
       var li;
-
       li= "<li class= 'liPelis'>"
-      li+= "<a href= ''> </a> "
-      li+= "<h2>"+titulo+"</h2>"
-      li += "<a href='peliculas.html?id='"+ id +"'>"
+      li+= "<p class='titulos'>"+titulo+"</h2>"
+      li += "<a href='peliculas.html?id=" + id.id + "'>"
       li += "<img class='imgPelis' class='info' src=" + url  + ">"
       li += "</a>"
-
-      if (fechaDeLanzamiento!= null) {
-        li += "<p class='puntuacion'> <span> Lanzada el:</span> " + fechaDeLanzamiento + "</p>"
-      }
-      li += "<p class='puntuacion'> <span> Puntuación:</span> " + puntuacion  + "/10</p>"
-    li += "</li>"
-
+      li += "</li>"
     ul.innerHTML += li
 
 
@@ -78,14 +45,7 @@ for (var i = 0; i < arrayPeliculas.length; i++) {
   })
 
 
-
-
-
-
 }
-
-
-
 
 
 
@@ -131,4 +91,30 @@ function agregarFavoritos(id){
   console.log(id);
   console.log(JSON.parse(window.sessionStorage.getItem("favorita")));
 
+}
+
+
+//media query event handler
+if(matchMedia){
+  const mq = window.matchMedia( "(max-width:768px)" );//sets the width you want
+  mq.addListener(WidthChange);
+  WidthChange(mq)
+}
+
+function WidthChange(mq){
+  if(mq.matches){
+    //if window width is less than or equal to 768px;
+    $("#navbar_toggle").removeClass("dis-none"); //makes toggler visible
+    $("#navbar_collapse").addClass("dis-none");//makes the menu not visible initially
+    //so you can only see the menu items when you click the toggler
+
+    $("#navbar_toggle").on('click', function(e){
+      $("#navbar_collapse").slideToggle();
+      $("#navbar_collapse").css({"display": "block"});
+    })
+  }else{
+    //for larger screens
+    $("#navbar_toggle").addClass('dis-none');
+    $("#navbar_collapse").removeClass('dis-none');
+  }
 }
