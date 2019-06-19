@@ -284,6 +284,10 @@ nav.mqMobile{
     li.l1 {
       float: left;
     }
+
+    li.logIn{
+      width: 100%;
+    }
     nav.encabezado{
     display: none;
     }
