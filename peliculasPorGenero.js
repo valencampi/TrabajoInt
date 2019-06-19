@@ -1,4 +1,4 @@
-window.onload = function () {
+window.addEventListener("load",function () {
 
     var urlParams = new URLSearchParams(window.location.search);
     var id = urlParams.get('idgenero');
@@ -103,4 +103,4 @@ window.onload = function () {
     }
 
 
-  }
+  )}
