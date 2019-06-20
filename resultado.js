@@ -12,7 +12,7 @@ window.addEventListener("load",function(){
       if(resultado.length == 0 || resultado.length < 3){
         console.log(resultado.length);
         UIkit.notification({
-            message: '<br>Ingresa más de 3 caracteres',
+            message: '<br>Ingresá más de 3 caracteres',
             status: 'danger',
             pos: 'top-right',
             timeout: 3000

@@ -117,6 +117,7 @@ p.titulos{
   font-family: 'Julius Sans One', sans-serif;
   height: 27px;
   color: white;
+  list-style: none;
 }
 
 ul.ull{
