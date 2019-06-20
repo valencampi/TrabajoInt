@@ -13,7 +13,7 @@ console.log(arrayPeliculas[i]);
     return respond.json()
   })
   .then(function(id){
-      var ul = document.querySelector("section ul")
+      var ul = document.querySelector("section ul.ula")
 
       titulo = id.title
       console.log(titulo);
@@ -85,7 +85,7 @@ function agregarFavoritos(id){
     arrayPelisFavoritas.splice(arrayPelisFavoritas.indexOf(id),1);
     console.log(arrayPelisFavoritas);
     window.sessionStorage.setItem("favorita", JSON.stringify(arrayPelisFavoritas))
-    document.querySelector(".estrellita").style.backgroundColor = "inherit"
+    document.querySelector(".estrellita").style.backgroundColor = "white"
   }
 
   console.log(id);
