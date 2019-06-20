@@ -1,4 +1,4 @@
-o*{box-sizing: border-box;
+*{box-sizing: border-box;
 font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
@@ -20,7 +20,7 @@ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 
 body {
   background-color: black;
-  height: 100vh;
+  height: 182vh;
 }
 
 section {
@@ -98,6 +98,17 @@ li.logInMq {
   display: none
 }
 
+ul.ull{
+  overflow: hidden;
+  margin: 0;
+  background-color: black;
+}
+
+.ula{
+  overflow: hidden;
+  margin-top: 110px;
+  background-color: black;
+}
 
 form input{
   margin-bottom: 15px
@@ -117,13 +128,8 @@ p.titulos{
   font-family: 'Julius Sans One', sans-serif;
   height: 27px;
   color: white;
-  list-style: none;
 }
 
-ul.ull{
-  overflow: hidden;
-  margin: 117px;
-}
 
 li.liPelis{
   float: left;
@@ -131,8 +137,16 @@ li.liPelis{
 
 img.imgPelis {
   float: left;
+  width: 100%;
   height: 400px;
-  padding: 5px;
+  padding: 5px
+}
+
+
+.liPelis{
+  width: 20%;
+  top: 10px;
+
 }
 
 /* footer */
@@ -142,12 +156,12 @@ footer{
   height: 50px;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -521px;
   background-color: #F3EDED;
 }
 
 .final{
-  background-color: white;
+  background-color: black;
 }
 
 .li2 {
@@ -161,24 +175,6 @@ footer{
   font-size: 11px;
   font-weight: bold;
 }
-
-.liPelis{
-  width: 20%;
-  top: 10px;
-
-
-
-}
-
-.ula{
-  overflow: hidden;
-  margin-top: 167px;
-}
-
-img.imgPelis{
-  bottom: 0;
-}
-
 .movie {
   height: 40px;
   float: left;
@@ -186,6 +182,9 @@ img.imgPelis{
   top: 9px;
   left: 5px;
 }
+
+
+
 
 
 ////////////////////////
@@ -225,9 +224,6 @@ img.imgPelis{
 
 @media screen and (max-width:768px){
 
-  nav.mqMobile{
-    display: block;
-  }
   .logoMq {
       margin: 10px;
       height: 70px;
@@ -249,19 +245,21 @@ img.imgPelis{
       text-align: center;
     }
 
+  button {
+    color: white;
+  }
 
+  li.logInMq {
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+  }
 
-    li.logInMq {
-      float: left;
-      list-style-type: none;
-      text-align: center;
-      width: 100%;
-    }
+  .preferidasMq {
+    display: none;
 
-    .preferidasMq {
-      display: none;
-
-    }
+  }
 
 
   .li1 {
@@ -283,6 +281,10 @@ img.imgPelis{
 
     li.l1 {
       float: left;
+    }
+
+    li.logIn{
+      width: 100%;
     }
     nav.encabezado{
     display: none;
@@ -313,6 +315,15 @@ img.imgPelis{
         width: 80%;
         padding: 0.5rem 1rem;
     }
+
+    li.liPelis {
+      float: left;
+      width: 100%;
+      height: 20%;
+      padding: 15px;
+      list-style: none;
+    }
+
     img.movie{
       float: left;
       width: 20%;
@@ -328,10 +339,6 @@ img.imgPelis{
       margin-bottom: 10px;
     }
 
-    nav.final{
-      overflow: hidden;
-    }
-
     button {
       color: white;
       background-color: transparent;
@@ -342,7 +349,13 @@ img.imgPelis{
 
 
     }
-
+    nav.final{
+      overflow: hidden;
+    }
     ul.nav{
       width: 100%;
+    }
+
+    footer{
+      bottom: 0px;
     }
