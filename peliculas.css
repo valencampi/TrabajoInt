@@ -289,6 +289,7 @@ footer{
     nav.mqMobile{
       display: block;
     }
+
     .logoMq {
         margin: 10px;
         height: 70px;
@@ -299,9 +300,8 @@ footer{
         border-radius: 35px;
         display: block;
         position: static;
-
-
       }
+
       .botonBuscar{
         display: none;
       }
@@ -365,15 +365,34 @@ footer{
           height: 40px;
           border-bottom: 1px solid #ddd;
       }
+
       .uk-navbar-nav li a{
           display: block;
           width: 80%;
           padding: 0.5rem 1rem;
       }
+
       img.movie{
         float: left;
         width: 20%;
       }
+
+      li.li{
+        width: 100%;
+      }
+
+      li.nombre{
+        list-style-type: none;
+    text-align: center;
+    padding: 15px;
+    color: red;
+    font-style: italic;
+    float: left;
+    font-size: 15px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 300;
+      }
+
       ul.ul2{
         width: 80%;
         overflow: hidden;
@@ -383,6 +402,22 @@ footer{
       ul li.li2{
         width: 30%;
         margin-bottom: 10px;
+      }
+
+      ul.detalles li p{
+        margin-left: 0;
+      }
+
+      ul.detalles li p.sinop{
+        margin-top: 282px;
+      }
+
+      ul.detalles{
+        margin-top: -81px;
+      }
+
+      ul.detalles li{
+        height: 100vh;
       }
 
       nav.final{
@@ -396,10 +431,10 @@ footer{
         font-family: 'Julius Sans One', sans-serif;
         font-weight: 300;
         border: 0;
-
-
       }
 
       ul.nav{
         width: 100%;
       }
+
+}

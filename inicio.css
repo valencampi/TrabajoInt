@@ -206,9 +206,8 @@ nav.mqMobile{
       border-radius: 35px;
       display: block;
       position: static;
-
-
     }
+
     .botonBuscar{
       display: none;
     }
@@ -224,8 +223,6 @@ nav.mqMobile{
     font-family: 'Julius Sans One', sans-serif;
     font-weight: 300;
     border: 0;
-
-
   }
 
   li.logInMq {
@@ -237,7 +234,6 @@ nav.mqMobile{
 
   .preferidasMq {
     display: none;
-
   }
 
   .li1 {
@@ -260,6 +256,7 @@ nav.mqMobile{
     li.l1 {
       float: left;
     }
+
     nav.encabezado{
     display: none;
     }
@@ -268,12 +265,12 @@ nav.mqMobile{
       display: block;
     }
 
-
     .uk-navbar-left{
         width: 100%;
         background-color: #262626;
 
     }
+
     .uk-navbar-item{ display: inline; }
 
     .uk-navbar-nav{ display:block; }
@@ -284,6 +281,7 @@ nav.mqMobile{
         height: 40px;
         border-bottom: 1px solid #ddd;
     }
+
     .uk-navbar-nav li a{
         display: block;
         width: 80%;
@@ -294,6 +292,7 @@ nav.mqMobile{
       float: left;
       width: 20%;
     }
+
     ul.ul2{
       width: 80%;
       overflow: hidden;

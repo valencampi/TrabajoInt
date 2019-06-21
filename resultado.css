@@ -225,6 +225,10 @@ footer{
     display: block;
   }
 
+  section ul{
+    margin-top: -85px;
+  }
+
   .logoMq {
       margin: 10px;
       height: 70px;
@@ -290,12 +294,12 @@ footer{
       display: block;
     }
 
-
     .uk-navbar-left{
         width: 100%;
         background-color: #262626;
 
     }
+
     .uk-navbar-item{ display: inline; }
 
     .uk-navbar-nav{ display:block; }
@@ -306,6 +310,7 @@ footer{
         height: 40px;
         border-bottom: 1px solid #ddd;
     }
+
     .uk-navbar-nav li a{
         display: block;
         width: 80%;
@@ -322,4 +327,24 @@ footer{
 
     ul.nav{
       width: 100%;
+    }
+
+    img.movie{
+      float: left;
+      width: 20%;
+    }
+
+    ul.ul2{
+      width: 80%;
+      overflow: hidden;
+      float: right;
+    }
+
+    ul li.li2{
+      width: 23%;
+      margin-bottom: 10px;
+    }
+
+    nav.final{
+      overflow: hidden;
     }

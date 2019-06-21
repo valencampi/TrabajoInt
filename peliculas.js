@@ -50,7 +50,7 @@ fetch(url)
     li += "<h1 class='peli'>"+ titulo + "</h1>"
     li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
     li += "<button class='estrellita' onclick='agregarFavoritos("+id+")'> &#9733 </button>"
-    li += "<p> <span class='underline'>Sinopsis</span>: "+ sinopsis + "</p>"
+    li += "<p class='sinop'> <span class='underline'>Sinopsis</span>: "+ sinopsis + "</p>"
     li += "<p> <span class='underline'>Géneros</span>: "
         for (var i = 0; i < arrayGeneros.length; i++) {
           var id = arrayGeneros[i].id
