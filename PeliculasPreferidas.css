@@ -233,6 +233,7 @@ nav.mqMobile{
 
     section ul{
       margin-top: -85px;
+      height: 100%;
     }
 
     nav.encabezado{
@@ -348,3 +349,6 @@ nav.mqMobile{
       h1.prefe{
         margin-top: -75px;
       }
+
+
+  
