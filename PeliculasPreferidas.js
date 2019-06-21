@@ -38,7 +38,6 @@ console.log(arrayPeliculas[i]);
     ul.innerHTML += li
 
 
-
   })
   .catch(function(error) {
     console.log("Error" + error) ;

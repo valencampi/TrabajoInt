@@ -175,6 +175,10 @@ span.underline{
   display: none;
 }
 
+.estrellita{
+  margin-left:-200px;
+}
+
 /* recomendaciones */
 
 ul.recomen{
@@ -251,6 +255,7 @@ footer{
 .dis-none{
     display: none;
 }
+
 #navbar_toggle{
     position: absolute;
     right: 1em;
@@ -262,6 +267,7 @@ footer{
     height: 40px !important;
     min-height: 40px;
 }
+
 .logoMq {
     height: 70px;
     width: 70px;
@@ -271,9 +277,6 @@ footer{
     border-radius: 35px;
     position: fixed;
     display: none;
-
-
-
 
   }
   .logo{
@@ -306,8 +309,6 @@ footer{
         text-align: center;
       }
 
-
-
       li.logInMq {
         float: left;
         list-style-type: none;
@@ -317,9 +318,7 @@ footer{
 
       .preferidasMq {
         display: none;
-
       }
-
 
     .li1 {
       list-style-type: none;
