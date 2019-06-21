@@ -177,6 +177,7 @@ span.underline{
 
 .estrellita{
   margin-left:-200px;
+  cursor: pointer;
 }
 
 /* recomendaciones */
