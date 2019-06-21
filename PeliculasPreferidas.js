@@ -46,8 +46,6 @@ console.log(arrayPeliculas[i]);
 
 }
 
-
-
 //function agregarFavoritos//
 
 function agregarFavoritos(id){
@@ -117,7 +115,6 @@ function agregarFavoritos(id){
           $("#navbar_collapse").removeClass('dis-none');
       }
   }
-
 
 
 })
