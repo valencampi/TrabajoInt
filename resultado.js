@@ -3,7 +3,7 @@ window.addEventListener("load",function(){
     var urlParams = new URLSearchParams(window.location.search);
     var query = urlParams.get('buscador');
 
-    // que se acuerde lo que busque
+  // Que se acuerde lo que busque
     document.querySelector("#input").value = query
 
     var buscador = document.querySelector(".buscador1");

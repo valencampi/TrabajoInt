@@ -1,7 +1,7 @@
 window.addEventListener("load",function () {
 
 
-// peliculas mas populares
+// Peliculas mas populares
 fetch("https://api.themoviedb.org/3/movie/popular?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US&page=1")
 .then(function(respond) {
   return respond.json()
@@ -19,6 +19,11 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=6e11caa7480bb2cb18a5bf
   var div = ""
 
   for (var i = 0; i < cantidadDePelis; i++) {
+// un ciclo para que se repita
+// i = index, si lo vemos en console.log marca un numero
+// var i = 0: inicia el ciclo
+// i < : limite de repeticiones
+// i++: incrementacion de los ciclos
     var id= arrayPopular[i].id
     var title = arrayPopular[i].title
     var foto = arrayPopular[i].poster_path
@@ -47,7 +52,8 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=6e11caa7480bb2cb18a5bf
   console.log("Error" + error) ;
 })
 
-// peliculas con mayor puntaje
+
+// Peliculas con mayor puntaje
 fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US&page=1")
 .then(function(respond) {
   return respond.json()
@@ -93,7 +99,7 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=6e11caa7480bb2cb18a5
   console.log("Error" + error);
 })
 
-// proximos estrenos
+// Proximos estrenos
 fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US&page=1s")
 .then(function(respond) {
   return respond.json()
@@ -138,8 +144,6 @@ fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=6e11caa7480bb2cb18a5b
 .catch(function(error) {
   return console.log("Error" + error);
 })
-
-/*BUSCADOR*/
 
 
   //media query event handler

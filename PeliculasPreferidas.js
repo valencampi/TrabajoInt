@@ -49,15 +49,12 @@ console.log(arrayPeliculas[i]);
 
 
 
-//function agregarFavoritos//
+//Agregar a favoritos//
 
 function agregarFavoritos(id){
 
-  // trailer pelicula
   var urlParams = new URLSearchParams(window.location.search);
   var query = urlParams.get("id");
-
-  //PELIS PREFERIDAS//
 
   var arrayPelisFavoritas = JSON.parse(window.sessionStorage.getItem("favorita"))
 
@@ -91,7 +88,3 @@ function agregarFavoritos(id){
   console.log(JSON.parse(window.sessionStorage.getItem("favorita")));
 
 }
-
-
-
-  

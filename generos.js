@@ -1,4 +1,5 @@
 window.onload = function () {
+// para que cargue todo antes de que sea vea la pagina
 
   fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US")
   .then(function(respond) {

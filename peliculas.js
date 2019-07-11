@@ -1,14 +1,18 @@
 window.addEventListener("load",function(){
+//
 
-// trailer pelicula
+// Trailer pelicula
 var urlParams = new URLSearchParams(window.location.search);
 var query = urlParams.get("id");
+// buscar en la URL de la pagina lo que queremos agarrar, en este caso el id
 var url = "https://api.themoviedb.org/3/movie/"+ query + "/videos?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US"
 var urlTrailer = ""
 
 fetch(url)
+// trae la api para buscar informacion
   .then(function(respond) {
     return respond.json();
+    // devuelve un asincrono (solicitud que empieza pero no sabemos cuando termina) en formato JSON indispensable
   })
 
   .then(function(data) {
@@ -16,9 +20,10 @@ fetch(url)
     console.log(data.status_code);
       var trailer = data.results[0].key
       urlTrailer = '<iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/' + trailer + '"frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-      // detalle pelicula
-      var url = "https://api.themoviedb.org/3/movie/" + query + "?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US"
 
+      // Detalle pelicula
+      var url = "https://api.themoviedb.org/3/movie/" + query + "?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US"
+      // va aca adentro asi el trailer sabe de que pelicula tiene que ser y no se rompe cuando carga
       fetch(url)
         .then(function(respond) {
           return respond.json();
@@ -40,6 +45,7 @@ fetch(url)
           var puntuacion = detalle.vote_average
 
           li = "<li>"
+          // = crea el li =+ agrega elementos
           li += "<h1 class='peli'>"+ titulo + "</h1>"
           li += "<img src=https://image.tmdb.org/t/p/w500/"+ foto + ">"
           li += "<button class='estrellita' onclick='agregarFavoritos("+id+")'> &#9733 </button>"
@@ -58,6 +64,7 @@ fetch(url)
           li += "</li>"
 
           ul.innerHTML += li
+          // agrega todos los elementos en el HTML
 
 
           // que desaparezca la palabra trailer si no hay trailer
@@ -72,6 +79,7 @@ fetch(url)
         })
         .catch(function(error) {
           return console.log("Error" + error);
+          // agarra errores en caso de que los haya
         })
 
   })
@@ -81,7 +89,7 @@ fetch(url)
   })
 
 
-// recomendaciones
+// Recomendaciones
 var urlParams = new URLSearchParams(window.location.search);
 var query = urlParams.get("id");
 var url = "https://api.themoviedb.org/3/movie/"+ query + "/recommendations?api_key=6e11caa7480bb2cb18a5bff7908d4f53&language=en-US&page=1"
@@ -118,14 +126,16 @@ fetch(url)
     return console.log("Error" + error);
   })
 
+// Que se abran las recomendaciones
   var recom = document.querySelector ('button.recomendaciones')
   recom.addEventListener ("click", function() {
-    var ul = document.querySelector("ul.recomen")
-    ul.classList.toggle("display-none")
-  })
+    // cuando clickeas en el boton se abren las recomendaciones
+  var ul = document.querySelector("ul.recomen")
+  ul.classList.toggle("display-none")
+})
 
 
-  //media query event handler
+//Media query event handler
   if(matchMedia){
       const mq = window.matchMedia( "(max-width:768px)" );//sets the width you want
       mq.addListener(WidthChange);
