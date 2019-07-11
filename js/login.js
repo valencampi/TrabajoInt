@@ -1,5 +1,6 @@
 window.addEventListener("load",function () {
 
+// si no hay login, no se muestra pelis favs
 if (sessionStorage.getItem("usuario") != null) {
   document.querySelector(".logIn").style.display = "none"
   document.querySelector(".preferidas").style.display = "block"
@@ -10,11 +11,13 @@ if (sessionStorage.getItem("usuario") != null) {
 
 }
 
+// validacion formulario
 var formulario = document.querySelector("form.uk-flex.uk-flex-column")
 var nombre = formulario.querySelector("input[name = 'nombre']")
 var email = formulario.querySelector("input[name = 'email']")
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
+// para que no te deje enviarlo si faltan datos
 formulario.onsubmit = function (event) {
   var select = formulario.querySelector("select")
   var option = select.options[select.selectedIndex]
@@ -42,7 +45,4 @@ formulario.onsubmit = function (event) {
 }
 
 console.log(formulario);
-
-
-
 })
